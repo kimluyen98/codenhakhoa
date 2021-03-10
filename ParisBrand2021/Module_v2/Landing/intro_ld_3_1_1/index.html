@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro_ld_3_1_1.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .intro_ld_3_1_1 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .intro_ld_3_1_1 {
+        margin-top: 80px;
+    }
+    
+    .intro_ld_3_1_1 .mb {
+        display: none;
+    }
+    
+    .intro_ld_3_1_1_bg {
+        position: relative;
+    }
+    
+    .intro_ld_3_1_1_bg img {
+        width: 100%;
+        display: block;
+    }
+    
+    .intro_ld_3_1_1_box {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        left: 0;
+        color: #000;
+    }
+    
+    .intro_ld_3_1_1_box .row {
+        margin: 0;
+        align-items: center;
+    }
+    
+    .intro_ld_3_1_1_box .row .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .intro_ld_3_1_1_box ul {
+        padding-left: 0px;
+        margin: 15px 0;
+        list-style: none;
+    }
+    
+    .intro_ld_3_1_1_box ul li {
+        font-size: 24px;
+    }
+    
+    .intro_ld_3_1_1_regist a {
+        background: #ff5159;
+        color: #fff;
+        padding: 12px 25px;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    
+    @media (max-width: 1440px) {
+        .intro_ld_3_1_1_title {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .intro_ld_3_1_1_title img {
+            width: 100%;
+        }
+        .intro_ld_3_1_1_mau {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .intro_ld_3_1_1_mau img {
+            width: 100%;
+            display: block;
+        }
+        .intro_ld_3_1_1_box {
+            bottom: 40px;
+        }
+        .intro_ld_3_1_1_box ul {
+            width: 80%;
+            margin: 15px auto;
+        }
+        .intro_ld_3_1_1_box ul li {
+            font-size: 20px;
+        }
+        .intro_ld_3_1_1_regist {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width: 1280px) {
+        .intro_ld_3_1_1_box {
+            bottom: 20px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .intro_ld_3_1_1_box {
+            bottom: 20px;
+        }
+        .intro_ld_3_1_1_box ul li {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .intro_ld_3_1_1_title {
+            width: 65%;
+        }
+        .intro_ld_3_1_1_title img {
+            width: 100%;
+        }
+        .intro_ld_3_1_1_box {
+            bottom: 17px;
+        }
+        .intro_ld_3_1_1_box ul {
+            width: 65%;
+            margin-top: 10px;
+        }
+        .intro_ld_3_1_1_box ul li {
+            font-size: 16px;
+        }
+        .intro_ld_3_1_1_regist {
+            width: 65%;
+        }
+        .intro_ld_3_1_1_regist a {
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .intro_ld_3_1_1 .pc {
+            display: none;
+        }
+        .intro_ld_3_1_1 .mb {
+            display: block;
+        }
+        .intro_ld_3_1_1_title {
+            width: 90%;
+        }
+        .intro_ld_3_1_1_title img {
+            width: 100%;
+        }
+        .intro_ld_3_1_1_mau {
+            width: 90%;
+        }
+        .intro_ld_3_1_1_box {
+            bottom: 20px;
+        }
+        .intro_ld_3_1_1_box ul {
+            display: flex;
+            width: 100%;
+            margin: 10px auto;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+        .intro_ld_3_1_1_box ul li {
+            width: 50%;
+        }
+        .intro_ld_3_1_1_regist {
+            text-align: center;
+            width: 100%;
+            margin-top: -30px;
+        }
+        .intro_ld_3_1_1_regist a {
+            font-size: 20px;
+            padding: 13px 90px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .intro_ld_3_1_1_box ul li {
+            font-size: 15px;
+        }
+        .intro_ld_3_1_1_regist a {
+            padding: 13px 70px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .intro_ld_3_1_1_box ul li {
+            font-size: 13px;
+        }
+        .intro_ld_3_1_1_regist a {
+            padding: 9px 46px;
+        }
+    }
+    /*# sourceMappingURL=intro_ld_3_1_1.css.map */
+</style>
+
+<body>
+    <section id="" class="intro_ld_3_1_1">
+        <div class="intro_ld_3_1_1_bg">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/intro_ld_3_1_1-bg.jpg">
+                <img src="images/intro_ld_3_1_1-bg-m.jpg" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="intro_ld_3_1_1_box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="intro_ld_3_1_1_title">
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/intro_ld_3_1_1-title.png">
+                                <img src="images/intro_ld_3_1_1-title.png" alt="">
+                            </picture>
+                        </div>
+                        <ul>
+                            <li><i class="icon-ok-circled2"></i> Răng giả chắc khỏe</li>
+                            <li><i class="icon-ok-circled2"></i> Ngăn ngừa tiêu xương</li>
+                            <li><i class="icon-ok-circled2"></i> Độ bền cao, thẩm mỹ tốt</li>
+                        </ul>
+                        <div class="intro_ld_3_1_1_mau mb">
+                            <img src="images/intro_ld_3_1_1-mau.png" alt="">
+                        </div>
+                        <div class="intro_ld_3_1_1_regist">
+                            <a href="">Nhận ưu đãi ngay >></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="intro_ld_3_1_1_mau pc">
+                            <img src="images/intro_ld_3_1_1-mau.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

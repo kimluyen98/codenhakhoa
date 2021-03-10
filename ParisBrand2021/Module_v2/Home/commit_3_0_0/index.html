@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" href="../../media/css/style.css">
+    <!-- <link rel="stylesheet" href="css/commit_3_0_0.css"> -->
+    <script src="../../media/dist/lib.min.js"></script>
+    <script src="../../media/dist/tiny.slider.min.js"></script>
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    @font-face {
+        font-family: 'GMVDino';
+        src: url(font/GMV_DIN_Pro-Cond_Medium.ttf);
+    }
+    
+    .commit_3_0_0,
+    .commit_3_0_0__box h3 {
+        font-family: GMVDino;
+    }
+    
+    .commit_3_0_0 .commit_3_0_0_overlay {
+        background: rgba(83, 83, 83, 1);
+    }
+    
+    .commit_3_0_0_box #commit_3_0_0_closePopup {
+       color: #fff;
+       font-size: 24px;
+       font-weight: 500;
+    }
+    
+    .commit_3_0_0 {
+        font-size: 14px;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        display: none;
+        position: fixed;
+        z-index: 16;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .commit_3_0_0_block {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .commit_3_0_0 .commit_3_0_0_overlay {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0.7;
+    }
+    
+    .commit_3_0_0_box article {
+        z-index: 10;
+        margin: 0px auto;
+        width: 400px;
+        position: relative;
+        border-radius: 4px;
+    }
+    
+    @media (max-width: 1024px) {
+        .commit_3_0_0_box article {
+            width: 350px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .commit_3_0_0_box article {
+            width: 300px;
+        }
+    }
+    
+    .commit_3_0_0_box #commit_3_0_0_closePopup {
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -28px;
+        right: -24px;
+        transition: all 0.5s ease 0s;
+        font-family: arial;
+    }
+    
+    @media (max-width: 414px) {
+        .commit_3_0_0_box #commit_3_0_0_closePopup {
+            right: -10px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .commit_3_0_0_box #commit_3_0_0_closePopup {
+            right: 0px;
+            top: -30px;
+        }
+    }
+    
+    .commit_3_0_0_box #commit_3_0_0_closePopup:hover {
+        transform: rotate(360deg);
+        cursor: pointer;
+    }
+    
+    .commit_3_0_0 {
+        display: none;
+        z-index: 16;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .commit_3_0_0__box {
+        background: #0165CD;
+        padding: 20px 20px 30px;
+        border-radius: 8px;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .commit_3_0_0__box h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-top: 0;
+        text-align: center;
+        line-height: 1.3;
+    }
+    
+    .commit_3_0_0__box select {
+        width: 100%;
+        text-align: center;
+        text-align-last: center;
+        padding: 5px;
+        background-color: #6DCFF6;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .commit_3_0_0__box option {
+        text-align: left;
+    }
+    
+    .commit_3_0_0__box__item {
+        background-color: #fff;
+        margin-top: 10px;
+        min-height: 350px;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    
+    .commit_3_0_0__box__item .scrollbar {
+        float: left;
+        height: 220px;
+        width: 300px;
+        overflow-y: scroll;
+    }
+    
+    .commit_3_0_0__box__item .force-overflow {
+        min-height: 320px;
+    }
+    
+    .commit_3_0_0__box__item #style-1::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        background-color: #F5F5F5;
+    }
+    
+    .commit_3_0_0__box__item #style-1::-webkit-scrollbar {
+        width: 5px;
+        background-color: #F5F5F5;
+    }
+    
+    .commit_3_0_0__box__item #style-1::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #0055A4;
+    }
+    
+    .commit_3_0_0__box__sub {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    
+    .commit_3_0_0__box__sub a:hover {
+        color: #0055A4;
+    }
+    
+    .commit_3_0_0__box__sub .address {
+        width: 50%;
+    }
+    
+    .commit_3_0_0__box__sub .icon__call,
+    .commit_3_0_0__box__sub .icon__time {
+        width: 24%;
+        padding-top: 22px;
+        position: relative;
+    }
+    
+    .commit_3_0_0__box__sub .icon__call::before {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAMAAABY1h8eAAAAilBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyB0XzFUAAAALXRSTlMAHQT56dwrSpxvXcGU8u3jVjINypFBJyPUr0U3z7qniHxi2LSsEmQ8FxG5oWgYWmyIAAABTElEQVQoz2WS2WKDIBBFr4DgGrdEszdp1i73/3+vMok1recNjoPDZfDLYt7kZN7MF/hPEpJ6u9ttNRkmf1SQUkcLhR61iDTTYHSV4eplGaxoKjyxM8Z4cF7uEwXEnFkIdcgEUJVDv7svaPpVwrAWmfENcDP68uN3e0sZKbxx7l2n3xWsJmkUTmRqD8yg3nUnhSUQ0XMDPq6Fdod+q5RS0xdg6Z3eAL1Oc9uEShkD1Iwg0qxrCBdzcnSIWCPgEcCezDs8iRnMMhwZoOUagCMZDjl0LD9TrNnCUsI4vVi1cvEcG9pnJS6+paLDiGMr//QExbPWNZF0feBduh0SFvtF+siw1epxT2GT+5MT/03jTz0PCY1WyHAvaIdsH9iCgq7aJQ/jqzy4nEWu9prZy3sOrFPRYTmZBCEo42uFyQxNmEzfyGRu46kZJ36HV34ACq0lLm3MlDMAAAAASUVORK5CYII=") center 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        display: block;
+        content: '';
+        width: 23px;
+        height: 23px;
+    }
+    
+    .commit_3_0_0__box__sub .icon__call:hover::before {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAMAAABY1h8eAAAAflBMVEUAAAAAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQ4jNU4AAAAKXRSTlMABB352+krJkqcb11B0sGU8uPLVjIN7a2RujeniHxktBKwYkU8FxGhaI68XzgAAAFKSURBVCjPZZLZdoMwEEPlDQyEHUL2tFna6v9/sGYCh7Tct7GQjpEHM2qzayqyanYbhX9kljT5fp8b0mZ/JF3QJMEhCYlhoRetcxzeRj3QdfMQbZnixZAfsxCQchtB6C2zENd5hNNjTRemjLYXseQJ8I6j/fYTPwomCifuEIiNVYgMSadwJYvozBLKmliMLZBw5AF8XWrjz+GoFasLBuQMmAMQ5KKKGquUc0DPBCK6ew/hw109fQjroXkJB0eyijGRUm9LXKgRcxNmT9LquQS2+wIbxogoZVzfVPXp0x0OjCYnPnKSdYwFH5yat1dWPXl9k8itz3zKbeeGRf0meQpzY9TrP4VDNSZn4zfNmDrMDS2qUOJZM5q7nZJrCqaLc56XV5nKGUT8PBqWb+85cy9Etu1qEwTdppcOqx1asdq+hdXepmtl2fg93vkFd3ohwQqMlhAAAAAASUVORK5CYII=") center 0 no-repeat;
+        content: '';
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        display: block;
+        width: 23px;
+        height: 23px;
+    }
+    
+    .commit_3_0_0__box__sub .icon__time::before {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAdCAMAAAB/hKeOAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjHWqVAAAAMnRSTlMAQICw4dBwUDDwH/ygD8EW+OrUj3UE87SpDOTax5aJYFpNPjgrEwi8pJuTamRVSBuEaZANRuwAAAEDSURBVCjPZc/pcoMgFIbhD4JaBIxb1OyLS/ak5f4vrtCQqu07/GCegZlz4Mr5kmDcU2/Xy5FMN6W+Z7H0Z28Iw6OXVYKvLwkNQ2Voo01boJsB0lzjAIh3SjFv8hM7KbUuAU2AO3XVAI2szc/eoCR5GPMX/jCZGKMTYGbPK6JfdtHME950aI0Otv4h/ZyfpcydBQlMWdVtsuzm7BFbk9LuNHc2FWSfq8VXq7VeOcMp1TzlavgOT3a8id14FuD/fA2xhWgGlnKbbBddb329HQLbAagJ8Z1FzLbCVXAuivFfGmEf07+2EysYy5fBu6oQaWStLdlv3p4aK/KPUVUJXAs9itX4BrT6HVEWJdgIAAAAAElFTkSuQmCC") center 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+        left: 18px;
+        display: block;
+        content: '';
+        width: 16px;
+        height: 25px;
+    }
+    
+    .commit_3_0_0__box__sub .icon__time:hover::before {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAdCAMAAAB/hKeOAAAAilBMVEUAAAAAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaQAVaRd3ZgyAAAALXRSTlMAQICwT+BwMND78R/AoBcPBu7jqJFzYQvUzYpa9tnHaT44KxPotpuWlXpUSIS7SVg/AAAA/klEQVQoz2XQ13KEIBSA4aOLRlBExd7L9g3v/3o5ZEmU5B8vnG/oYCpSzwG7UJX3wZK4vahnS3mR/EAYRkEuaXrLUzcMBVKrsBIgwTEcfykBoJ0QWXP6LpNC3C4ACrfrXNMC4EbaqmsT7J3TF5qf+cd4iuaecAf9vXPU2+4qa2gQH21VpPTn+rO6cv4wRs6A5TJp87w09uq1ca7vVBmLqUMKkU0b3mM0BnJQac3EcRzEXlTSzj4L9u98q6MLYT1YzXR8y6rd9nabiW4GWBzHNxZ5uhEmyhjt7bn4oKR//LWOjoBWDE9ikozWkbbt5P3WEBeNFR9WEleamLLyFvgCk2Aa9ErwR34AAAAASUVORK5CYII=") center 0 no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0px;
+        left: 18px;
+        display: block;
+        content: '';
+        width: 16px;
+        height: 25px;
+    }
+    
+    @media (max-width: 1024px) {
+        .commit_3_0_0__box article {
+            width: 350px;
+        }
+        .commit_3_0_0__box h3 {
+            font-size: 28px;
+        }
+        .commit_3_0_0__box__item {
+            min-height: 300px;
+        }
+        .commit_3_0_0__box__item .scrollbar {
+            width: 265px;
+        }
+        .commit_3_0_0__box__item #style-1::-webkit-scrollbar {
+            width: 3px;
+        }
+        .commit_3_0_0__box__sub {
+            margin-bottom: 20px;
+        }
+        .commit_3_0_0__box__sub .address {
+            width: 100%;
+        }
+        .commit_3_0_0__box__sub .icon__call,
+        .commit_3_0_0__box__sub .icon__time {
+            width: 50%;
+            text-align: center;
+        }
+        .commit_3_0_0__box__sub .icon__call::before,
+        .commit_3_0_0__box__sub .icon__time::before {
+            left: 40%;
+        }
+        .commit_3_0_0__box__sub .icon__call:hover::before,
+        .commit_3_0_0__box__sub .icon__time:hover::before {
+            left: 40%;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .commit_3_0_0__box select {
+            padding: 4px;
+            font-size: 14px;
+        }
+        .commit_3_0_0__box__item {
+            min-height: 300px;
+        }
+        .commit_3_0_0__box__item .scrollbar {
+            width: 230px;
+            height: 180px;
+        }
+        .commit_3_0_0__box__sub {
+            font-size: 13px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .commit_3_0_0__box {
+            width: 100%;
+            margin: 30px auto;
+        }
+        .commit_3_0_0__box h3 {
+            font-size: 25px;
+        }
+        .commit_3_0_0__box select {
+            padding: 8px;
+            font-size: 18px;
+        }
+        .commit_3_0_0__box__item {
+            min-height: 260px;
+        }
+        .commit_3_0_0__box__item .scrollbar {
+            width: 100%;
+            height: 200px;
+        }
+        .commit_3_0_0__box__sub {
+            font-size: 14px;
+        }
+        .commit_3_0_0__box__sub .address {
+            width: 40%;
+        }
+        .commit_3_0_0__box__sub .icon__call,
+        .commit_3_0_0__box__sub .icon__time {
+            width: 30%;
+            text-align: center;
+        }
+        .commit_3_0_0__box__sub .icon__call::before,
+        .commit_3_0_0__box__sub .icon__time::before {
+            left: 40%;
+        }
+        .commit_3_0_0__box__sub .icon__call:hover::before,
+        .commit_3_0_0__box__sub .icon__time:hover::before {
+            left: 40%;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .commit_3_0_0__box select {
+            padding: 5px;
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .commit_3_0_0__box__item {
+            min-height: 300px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .commit_3_0_0__box h3 {
+            font-size: 25px;
+        }
+        .commit_3_0_0__box__item {
+            min-height: 250px;
+        }
+    }
+    /*# sourceMappingURL=commit_3_0_0.css.map */
+</style>
+
+<body>
+    <div class="popup_call">agggg</div>
+    <div class="commit_3_0_0" id="commit_3_0_0">
+        <div class="commit_3_0_0_block">
+            <div class="commit_3_0_0_overlay" id="commit_3_0_0_overlay" style="display:none"></div>
+            <div id="commit_3_0_0_overlayClickform" class="overlay_form">
+                <div class="commit_3_0_0_box">
+                    <article>
+                        <div class="commit_3_0_0__box">
+                            <div class="commit_3_0_0__box__tt">
+                                <h3>Đặt lịch hẹn nhanh<br>qua các hệ thống cơ sở</h3>
+                                <select id="select-box3" onchange="showHide3()" class="commit_3_0_0__box3__select">
+                                    <option value="val1">Hà Nội</option>
+                                    <option value="val2">Hải Phòng</option>
+                                    <option value="val3">Tp. Vinh</option>
+                                    <option value="val4">Tp. HCM</option>
+                                    <option value="val5">Đà Nẵng</option>
+                                </select>
+                                <div class="commit_3_0_0__box__list">
+                                    <div class="commit_3_0_0__box__item" id="val1" style="display:block">
+                                        <div class="scrollbar" id="style-1">
+                                            <div class="force-overflow">
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 200 Quang Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 344 Quang Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commit_3_0_0__box__item" id="val2" style="display:none">
+                                        <div class="scrollbar" id="style-1">
+                                            <div class="force-overflow">
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 3, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 38 Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commit_3_0_0__box__item" id="val3" style="display:none">
+                                        <div class="scrollbar" id="style-1">
+                                            <div class="force-overflow">
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 399 Quang Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 300 Quang Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commit_3_0_0__box__item" id="val4" style="display:none">
+                                        <div class="scrollbar" id="style-1">
+                                            <div class="force-overflow">
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Sân Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 3339 Quang Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="commit_3_0_0__box__item" id="val5" style="display:none">
+                                        <div class="scrollbar" id="style-1">
+                                            <div class="force-overflow">
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 3999 Quang Trung</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                                <div class="commit_3_0_0__box__sub">
+                                                    <a href="" class="address">Số 666 Quang Trung, Hoàn Kiếm, HN</a>
+                                                    <a href="#" class="icon__call popup_call__click"> Hotline</a>
+                                                    <a href="#" class="icon__time"> Lịch hẹn</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a id="commit_3_0_0_closePopup">✖</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // $(document).ready(function() {
+    //     $(document).ready(function() {
+    //         $(".popup_call").click(function() {
+    //             $(".commit_3_0_0").fadeIn(5);
+    //             $(".commit_3_0_0 .commit_3_0_0_overlay").fadeIn(500);
+
+    //         });
+    //         $(".commit_3_0_0 #commit_3_0_0_closePopup, .commit_3_0_0 .commit_3_0_0_overlay").click(function() {
+    //             $(".commit_3_0_0").fadeOut(500);
+    //             $(".commit_3_0_0 .commit_3_0_0_overlay").fadeOut(500);
+    //         });
+    //     });
+    // });
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const popup_call = document.getElementsByClassName("popup_call");
+const commit_3_0_0 = document.getElementById("commit_3_0_0");
+const commit_3_0_0_overlayClickform = document.getElementById("commit_3_0_0_overlayClickform");
+const commit_3_0_0_overlay = document.getElementById("commit_3_0_0_overlay");
+const commit_3_0_0_closePopup = document.getElementById("commit_3_0_0_closePopup");
+
+for ( const call of popup_call ){
+  call.addEventListener("click", function(){
+    commit_3_0_0.style.display = "block";
+    commit_3_0_0_overlayClickform.style.display = "block";
+    commit_3_0_0_overlay.style.display = "block";
+  });
+}
+
+commit_3_0_0_closePopup.addEventListener("click", function(){
+    commit_3_0_0.style.display = "none";
+    commit_3_0_0_overlayClickform.style.display = "none";
+    commit_3_0_0_overlay.style.display = "none";
+});
+
+commit_3_0_0_overlay.addEventListener("click", function(){
+    commit_3_0_0.style.display = "none";
+    commit_3_0_0_overlayClickform.style.display = "none";
+    commit_3_0_0_overlay.style.display = "none";
+});
+
+});
+
+
+var commit3 = document.querySelector('#select-box3');
+var commit3_item = document.getElementsByClassName("commit_3_0_0__box__item");
+function showHide3(){
+    for ( var commit3_items of commit3_item){
+        if(commit3_items.style.display === "block"){
+            commit3_items.style.display = "none";
+        }
+        var ct = commit3.value;
+        if(ct){
+            var cm = document.querySelector('#'+ct);
+            cm.style.display = "block";
+            commit3_items = cm;
+        }
+    }
+}
+</script>
+
+</html>

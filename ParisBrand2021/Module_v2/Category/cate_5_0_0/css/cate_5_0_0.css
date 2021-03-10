@@ -1,0 +1,82 @@
+.cate_5_0_0 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.cate_5_0_0 img {
+  width: 100%;
+  display: block;
+}
+.cate_5_0_0_tabs {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.cate_5_0_0_tabs .tab {
+  width: 18%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0155bc;
+  color: #ffff;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.cate_5_0_0_tabs .tab:focus {
+  outline: unset;
+}
+.cate_5_0_0_tabs .tab.tns-nav-active {
+  background-color: #21a1ed;
+}
+.cate_5_0_0_sub {
+  padding-top: 40px;
+  text-align: justify;
+}
+.cate_5_0_0_sub img {
+  margin: 10px 0;
+}
+.cate_5_0_0_sub span {
+  font-style: italic;
+  padding-left: 15px;
+  color: #0055BC;
+}
+.cate_5_0_0_sub .sub_item {
+  margin-bottom: 20px;
+  display: block;
+}
+.cate_5_0_0_sub .sub_item .tt {
+  color: #000;
+  font-weight: 500;
+}
+
+@media (max-width: 812px) {
+  .cate_5_0_0_tabs .tab {
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 414px) {
+  .cate_5_0_0_tabs {
+    justify-content: center;
+  }
+  .cate_5_0_0_tabs .tab {
+    padding: 8px 10px;
+    width: 30%;
+    margin: 5px;
+    font-size: 14px;
+  }
+  .cate_5_0_0 .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .cate_5_0_0_sub .sub_item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .cate_5_0_0_tabs .tab {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=cate_5_0_0.css.map */

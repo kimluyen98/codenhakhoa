@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro_ld_3_4_3.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .intro_ld_3_4_3 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .intro_ld_3_4_3 {
+        margin-top: 80px;
+    }
+    
+    .intro_ld_3_4_3_bg {
+        position: relative;
+    }
+    
+    .intro_ld_3_4_3_bg img {
+        width: 100%;
+        display: block;
+    }
+    
+    .intro_ld_3_4_3_box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 150px;
+    }
+    
+    .intro_ld_3_4_3_sub {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .intro_ld_3_4_3_sub p {
+        margin-bottom: 0;
+    }
+    
+    .intro_ld_3_4_3_sub p:nth-child(1),
+    .intro_ld_3_4_3_sub p:nth-child(2) {
+        position: relative;
+    }
+    
+    .intro_ld_3_4_3_sub p:nth-child(1)::after,
+    .intro_ld_3_4_3_sub p:nth-child(2)::after {
+        border-right: 1px solid #fff;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -25px;
+        width: 1px;
+        height: 70px;
+    }
+    
+    .intro_ld_3_4_3_regist {
+        color: #fff;
+        background-color: #ff5159;
+        width: 250px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 7px 0;
+    }
+    
+    .intro_ld_3_4_3_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(255, 15, 0, 0.1), 0 0 1px 20px rgba(255, 15, 0, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+    
+    .intro_ld_3_4_3_regist i {
+        font-style: normal;
+        font-size: 16px;
+        text-transform: none;
+    }
+    
+    .intro_ld_3_4_3_regist a {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    @media (max-width: 1440px) {
+        .intro_ld_3_4_3_box {
+            bottom: 50px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .intro_ld_3_4_3_title {
+            width: 40%;
+        }
+        .intro_ld_3_4_3_title img {
+            width: 100%;
+        }
+        .intro_ld_3_4_3_box {
+            bottom: 30px;
+            left: 50px;
+        }
+        .intro_ld_3_4_3_sub {
+            font-size: 18px;
+            width: 35%;
+            margin: 10px 0;
+        }
+        .intro_ld_3_4_3_sub p:nth-child(1)::after,
+        .intro_ld_3_4_3_sub p:nth-child(2)::after {
+            height: 45px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .intro_ld_3_4_3_box {
+            bottom: 20px;
+        }
+        .intro_ld_3_4_3_sub {
+            font-size: 14px;
+            width: 40%;
+        }
+        .intro_ld_3_4_3_regist {
+            width: 220px;
+        }
+        .intro_ld_3_4_3_regist a {
+            font-size: 18px;
+        }
+        .intro_ld_3_4_3_regist i {
+            font-size: 13px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .intro_ld_3_4_3_title {
+            width: 100%;
+        }
+        .intro_ld_3_4_3_box {
+            left: 0;
+            width: 90%;
+            margin: 0 auto;
+            bottom: 10px;
+        }
+        .intro_ld_3_4_3_sub {
+            font-size: 16px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .intro_ld_3_4_3_regist {
+            margin: 10px auto 0;
+            border-radius: 15px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .intro_ld_3_4_3_title {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .intro_ld_3_4_3_sub {
+            font-size: 13px;
+        }
+        .intro_ld_3_4_3_sub p:nth-child(1)::after,
+        .intro_ld_3_4_3_sub p:nth-child(2)::after {
+            height: 35px;
+        }
+        .intro_ld_3_4_3_regist a {
+            font-size: 16px;
+        }
+    }
+    /*# sourceMappingURL=intro_ld_3_4_3.css.map */
+</style>
+
+<body>
+    <section id="" class="intro_ld_3_4_3">
+        <div class="intro_ld_3_4_3_bg">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/intro_ld_3_4_3-bg.jpg">
+                <img src="images/intro_ld_3_4_3-bg-m.jpg" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="intro_ld_3_4_3_box">
+                <div class="intro_ld_3_4_3_title">
+                    <img src="images/intro_ld_3_4_3-title.png" alt="">
+                </div>
+                <div class="intro_ld_3_4_3_sub">
+                    <p>6 tháng<br> Thay đổi rõ rệt</p>
+                    <p>Trả góp<br> Lãi suất 0%</p>
+                    <p>Biết kết quả<br> Sau 7 ngày</p>
+                </div>
+                <div class="intro_ld_3_4_3_regist">
+                    <a href="">>> Nhận ưu đãi >><br>
+                        <i>Duy nhất 15 người đăng ký tại đây</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+</html>

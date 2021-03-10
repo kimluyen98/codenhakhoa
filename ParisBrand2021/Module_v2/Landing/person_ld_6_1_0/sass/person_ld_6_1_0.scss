@@ -1,0 +1,261 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+%font1 {
+    font-family: 'Roboto Condensed', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+%icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+a {
+    text-decoration: none;
+}
+
+.person_ld_6_1_0{
+    padding: 30px 0;
+    background: #F7F7F7;
+    &__title{
+        @extend %font1;
+        color: #3056a0;
+        text-align: center;
+        font-size: 34px;
+        text-transform: uppercase;
+    }
+    &__box{
+        margin: 20px auto 0;
+    }
+    &__tab{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .tab{
+            width: 48%;
+            @extend %font1;
+            background: #e5e5e5;
+            margin-bottom: 40px;
+            padding: 14px 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #0055a4;
+            text-align: center;
+            position: relative;
+            &.active{
+                background: #0055A8;
+                color: #fff;
+                &::after{
+                    opacity: 1;
+                }
+            }
+            &::after{
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #0055A8;
+                position: absolute;
+                bottom: -20px;
+                left: calc(50% - 20px);
+                opacity: 0;
+            }
+        }
+        &.mb{
+            display: none;
+        }
+    }
+    &__img{
+        .item{
+            .text{
+                background: #00AEFF;
+                text-align: center;
+                color: #fff;
+                @extend %font1;
+                font-size: 20px;
+                padding: 10px 5px;
+            }
+        }
+        .item-child{
+            .box{
+                margin-bottom: 10px;
+                transition: all 0.4s;
+                &:hover{
+                    .text{
+                        background: #FF5259;
+                        transition: all 0.4s;
+                    }
+                }
+            }
+        }
+    }
+    &__regist{
+        text-align: center;
+        margin-top: 30px;
+        a{
+            @extend %font1;
+            padding: 10px 30px;
+            background: #FF5259;
+            color: #fff;
+            font-size: 22px;
+            border-radius: 50px;
+        }
+    }
+}
+
+@media #{$r1024}{
+    .person_ld_6_1_0{
+        &__title{
+            font-size: 26px;
+        }
+        &__box{
+            width: 100%;
+        }
+        &__tab{
+            .tab{
+                font-size: 16px;
+                padding: 13px 60px;
+            }
+        }
+        &__img{
+            .item{
+                .text{
+                    font-size: 16px;
+                }
+            }
+        }
+        &__regist{
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media #{$r768}{
+    .person_ld_6_1_0{
+        &__title{
+            font-size: 22px;
+        }
+        &__tab{
+            .tab{
+                font-size: 14px;
+                padding: 8px 30px;
+            }
+        }
+    }
+}
+
+@media #{$r414}{
+    .person_ld_6_1_0{
+        &__title{
+            font-size: 22px;
+            br{
+                display: none;
+            }
+        }
+        &__box{
+            display: block;
+            margin-top: 10px;
+        }
+        &__tab{
+            width: 100%;
+            .tab{
+                font-size: 14px;
+                padding: 5px;
+                display: block;
+                text-transform: initial;
+                text-align: center;
+                background: #f0f0f0;
+                margin-bottom: 20px;
+                &::after{
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 15px solid #0055A8;
+                    position: absolute;
+                    bottom: -14px;
+                    left: calc(50% - 13px);
+                }
+            }
+            &.pc{
+                display: none;
+            }
+            &.mb{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+        }
+        &__img{
+            width: 100%;
+        }
+        &__regist{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media #{$r375}{
+    .person_ld_6_1_0{
+        &__title{
+            font-size: 18px;
+        }
+        &__regist{
+            a{
+                font-size: 16px;
+            }
+        }
+        &__img{
+            .item{
+                .text{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$r320}{
+    .person_ld_6_1_0{
+        &__title{
+            font-size: 16px;
+        }
+        &__img{
+            .item{
+                .text{
+                    font-size: 12px;
+                }
+            }
+        }
+        &__tab{
+            .tab{
+                font-size: 12px;
+            }
+        }
+    }
+}

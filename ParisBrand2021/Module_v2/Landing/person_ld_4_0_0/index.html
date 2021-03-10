@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/person_ld_4_0_0.css" />
+    <script src="../../media/dist/lib.min.js"></script>
+    <script src="../../media/dist/tiny.slider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .person_ld_4_0_0 {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+    .person_ld_4_0_0.copy {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .person_ld_4_0_0.copy a {
+        background: #F36B44;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .person_ld_4_0_0 {
+        background-color: #13439f;
+        padding: 30px 0;
+    }
+    
+    .person_ld_4_0_0_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #fff;
+    }
+    
+    .person_ld_4_0_0_title br {
+        display: none;
+    }
+    
+    .person_ld_4_0_0_title p {
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    .person_ld_4_0_0_box1 {
+        margin: 30px auto 0;
+    }
+    
+    .person_ld_4_0_0_box2 {
+        display: none !important;
+    }
+    
+    .person_ld_4_0_0__ct {
+        padding: 5px 5px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        background-color: #05b6fd;
+    }
+    
+    .person_ld_4_0_0__pic {
+        transition: 0.9s;
+    }
+    .person_ld_4_0_0__pic img:hover{
+        transform: scale(1.01);
+        transition: 0.6s;
+    }
+    .person_ld_4_0_0__ct span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    .person_ld_4_0_0 .tns-nav{
+        display: none;
+        margin: 0;
+    }
+    .person_ld_4_0_0__item img {
+        width: 100%;
+        display: block;
+    }
+    .person_ld_4_0_0__item1 {
+        margin-bottom: 30px;
+    }
+    
+    .person_ld_4_0_0_regist {
+        background-color: #ff5159;
+        color: #fff;
+        padding: 6px 0 0px;
+        border-radius: 40px;
+        text-align: center;
+        width: 300px;
+        margin: 20px auto 0;
+        transition: 0.4s;
+    }
+    .person_ld_4_0_0_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(225, 225, 225, 0.1), 0 0 1px 20px rgba(225, 225, 225, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+    
+    .person_ld_4_0_0_regist a {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+        padding: 8px 10px;
+    }
+    
+    .person_ld_4_0_0_regist i {
+        font-style: normal;
+    }
+    
+    @media (max-width: 1024px) {
+        .person_ld_4_0_0_title {
+            font-size: 30px;
+        }
+        .person_ld_4_0_0_title p {
+            font-size: 20px;
+        }
+        .person_ld_4_0_0__ct {
+            font-size: 13px;
+            height: 80px;
+        }
+        .person_ld_4_0_0__ct span {
+            font-size: 22px;
+        }
+        .person_ld_4_0_0_regist {
+            width: 250px;
+        }
+        .person_ld_4_0_0_regist a {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .person_ld_4_0_0 .tns-nav{
+            display: block;
+        }
+        .person_ld_4_0_0 {
+            padding-bottom: 20px;
+        }
+        .person_ld_4_0_0_title {
+            font-size: 24px;
+        }
+        .person_ld_4_0_0_title br {
+            display: block;
+        }
+        .person_ld_4_0_0_title p {
+            font-size: 16px;
+        }
+        .person_ld_4_0_0_box1 {
+            display: none !important;
+        }
+        .person_ld_4_0_0_box2 {
+            margin: 20px auto 0;
+            display: block !important;
+        }
+        .person_ld_4_0_0__ct {
+            font-size: 16px;
+            height: auto;
+        }
+        .person_ld_4_0_0__ct span {
+            font-size: 24px;
+        }
+        .person_ld_4_0_0_regist {
+            width: 200px;
+        }
+        .person_ld_4_0_0_regist a {
+            font-size: 17px;
+        }
+        .person_ld_4_0_0 .owl-theme .owl-nav.disabled+.owl-dots {
+            margin-top: 0;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .person_ld_4_0_0_title {
+            font-size: 22px;
+        }
+    }
+    @media (max-width: 320px) {
+        .person_ld_4_0_0_title {
+            font-size: 20px;
+        }
+        .person_ld_4_0_0__ct {
+            font-size: 14px;
+        }
+    }
+    /*# sourceMappingURL=person_ld_4_0_0.css.map */
+</style>
+<body>
+    <section id="" class="person_ld_4_0_0">
+        <div class="container">
+            <div class="person_ld_4_0_0_title">
+                kết quả trồng răng implant 4s<br> tại nha khoa paris
+                <p>giải pháp tốt nhất - ăn nhai trọn đời</p>
+            </div>
+            <div class="person_ld_4_0_0_box1 owl-carousel owl-theme">
+                <div class="">
+                    <div class="person_ld_4_0_0__item person_ld_4_0_0__item1">
+                        <div class="person_ld_4_0_0__pic">
+                            <img src="images/person_ld_4_0_0-pic1.jpg">
+                        </div>
+                        <div class="person_ld_4_0_0__ct">
+                            <span>anh hoàng </span> Mất 2 răng cửa - Trồng Implant 2 răng
+                        </div>
+                    </div>
+                    <div class="person_ld_4_0_0__item">
+                        <div class="person_ld_4_0_0__pic">
+                            <img src="images/person_ld_4_0_0-pic4.jpg">
+                        </div>
+                        <div class="person_ld_4_0_0__ct">
+                            <span>lê chí công </span> Mất răng cửa - Trồng implant Hàn Quốc
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="person_ld_4_0_0__item person_ld_4_0_0__item1">
+                        <div class="person_ld_4_0_0__pic">
+                            <img src="images/person_ld_4_0_0-pic2.jpg">
+                        </div>
+                        <div class="person_ld_4_0_0__ct">
+                            <span>cô nhiệm </span> Mất răng toàn hàm - Trồng răng implant all on 6
+                        </div>
+                    </div>
+                    <div class="person_ld_4_0_0__item">
+                        <div class="person_ld_4_0_0__pic">
+                            <img src="images/person_ld_4_0_0-pic5.jpg">
+                        </div>
+                        <div class="person_ld_4_0_0__ct">
+                            <span>Nguyễn thế vinh</span> Mất răng toàn hàm - Trồng Implant all on 4 cả 2 hàm
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="person_ld_4_0_0__item person_ld_4_0_0__item1">
+                        <div class="person_ld_4_0_0__pic">
+                            <img src="images/person_ld_4_0_0-pic3.jpg">
+                        </div>
+                        <div class="person_ld_4_0_0__ct">
+                            <span>đoàn thị sánh </span> Mất răng toàn hàm - Trồng implant all on 6 2 hàm
+                        </div>
+                    </div>
+                    <div class="person_ld_4_0_0__item">
+                        <div class="person_ld_4_0_0__pic">
+                            <img src="images/person_ld_4_0_0-pic6.jpg">
+                        </div>
+                        <div class="person_ld_4_0_0__ct">
+                            <span>nguyễn thị lệ </span> Mất một răng cửa bên - Trồng implant Thụy Sỹ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="person_ld_4_0_0_box2 owl-carousel owl-theme">
+                <div class="person_ld_4_0_0__item">
+                    <div class="person_ld_4_0_0__pic">
+                        <img src="images/person_ld_4_0_0-pic1.jpg">
+                    </div>
+                    <div class="person_ld_4_0_0__ct">
+                        <span>anh hoàng </span> Mất 2 răng cửa - Trồng Implant 2 răng
+                    </div>
+                </div>
+                <div class="person_ld_4_0_0__item">
+                    <div class="person_ld_4_0_0__pic">
+                        <img src="images/person_ld_4_0_0-pic4.jpg">
+                    </div>
+                    <div class="person_ld_4_0_0__ct">
+                        <span>lê chí công </span> Mất răng cửa - Trồng implant Hàn Quốc
+                    </div>
+                </div>
+                <div class="person_ld_4_0_0__item person_ld_4_0_0__item1">
+                    <div class="person_ld_4_0_0__pic">
+                        <img src="images/person_ld_4_0_0-pic2.jpg">
+                    </div>
+                    <div class="person_ld_4_0_0__ct">
+                        <span>cô nhiệm </span> Mất răng toàn hàm - Trồng răng implant all on 6
+                    </div>
+                </div>
+                <div class="person_ld_4_0_0__item">
+                    <div class="person_ld_4_0_0__pic">
+                        <img src="images/person_ld_4_0_0-pic5.jpg">
+                    </div>
+                    <div class="person_ld_4_0_0__ct">
+                        <span>Nguyễn thế vinh</span> Mất răng toàn hàm - Trồng Implant all on 4 cả 2 hàm
+                    </div>
+                </div>
+                <div class="person_ld_4_0_0__item person_ld_4_0_0__item1">
+                    <div class="person_ld_4_0_0__pic">
+                        <img src="images/person_ld_4_0_0-pic3.jpg">
+                    </div>
+                    <div class="person_ld_4_0_0__ct">
+                        <span>đoàn thị sánh </span> Mất răng toàn hàm - Trồng implant all on 6 2 hàm
+                    </div>
+                </div>
+                <div class="person_ld_4_0_0__item">
+                    <div class="person_ld_4_0_0__pic">
+                        <img src="images/person_ld_4_0_0-pic6.jpg">
+                    </div>
+                    <div class="person_ld_4_0_0__ct">
+                        <span>nguyễn thị lệ </span> Mất một răng cửa bên - Trồng implant Thụy Sỹ
+                    </div>
+                </div>
+            </div>
+            <div class="person_ld_4_0_0_regist">
+                <a href="">>> Đăng ký tư vấn <<</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // person_ld_4_0_0
+    var person_ld_4_0_0_box1 = tns({
+        container: '.person_ld_4_0_0_box1',
+        items: 4,
+        center: true,
+        slideBy: 'page',
+        autoplay: false,
+        autoplayButtonOutput: false,
+        lazyload: true,
+        mouseDrag: false,
+        gutter: 10,
+        swipeAngle: false,
+        controls: false,
+        lazyloadSelector: '.tns-lazy',
+        responsive: {
+            0: {
+                items: 2,
+                nav: false,
+            },
+            768: {
+                mouseDrag: false,
+                items: 3,
+            }
+        },
+    });
+    var person_ld_4_0_0_box2 = tns({
+        container: '.person_ld_4_0_0_box2',
+        items: 4,
+        center: true,
+        slideBy: 'page',
+        autoplay: false,
+        autoplayButtonOutput: false,
+        lazyload: true,
+        mouseDrag: false,
+        gutter: 10,
+        swipeAngle: false,
+        controls: false,
+        navPosition: 'bottom',
+        lazyloadSelector: '.tns-lazy',
+        responsive: {
+            0: {
+                items: 1,
+            },
+            414: {
+                items: 1,
+            },
+        },
+    });
+    // end person_ld_4_0_0
+</script>
+
+</html>

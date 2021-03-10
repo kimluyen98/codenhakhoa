@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Module Paris</title>
+	<link rel="stylesheet" href="../../media/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/basis_ld_1_0_0.css" /> -->
+	<script src="../../media/dist/lib.min.js"></script>
+    <script src="../../media/dist/tiny.slider.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+	.basis_ld_1_0_0 {
+		font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+	.basis_ld_1_0_0.copy {
+		text-align: center;
+		padding: 20px 0;
+		min-height: 0
+	}
+	.basis_ld_1_0_0 img{
+		width: 100%;
+		display: block;
+	}
+	.basis_ld_1_0_0.copy a {
+		background: #F36B44;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 10px 30px;
+		border-radius: 20px;
+		border: 1px solid #fff;
+		outline: none;
+		cursor: pointer;
+	}
+	.basis_ld_1_0_0 {
+		font-family: "Roboto Condensed", sans-serif;
+	}
+
+	.basis_ld_1_0_0 {
+		padding: 30px 0 0;
+	}
+
+	.basis_ld_1_0_0_title {
+		font-size: 36px;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 30px 0 10px;
+		text-align: center;
+	}
+
+	.basis_ld_1_0_0_title span {
+		display: block;
+		font-size: 24px;
+		color: #000;
+	}
+
+	.basis_ld_1_0_0_title span br {
+		display: none;
+	}
+
+	.basis_ld_1_0_0_title br {
+		display: none;
+	}
+
+	.basis_ld_1_0_0__bs .item .content {
+		color: #fff;
+		position: absolute;
+	}
+
+	.basis_ld_1_0_0__bs .item .content1 {
+		top: 150px;
+		left: 20px;
+		width: 50%;
+	}
+
+	.basis_ld_1_0_0__bs .item .content2 {
+		width: 40%;
+		top: 210px;
+		left: 20px;
+	}
+
+	.basis_ld_1_0_0__bs .item .content3 {
+		top: 50px;
+		left: 30px;
+	}
+
+	.basis_ld_1_0_0__bs .item .content4 {
+		top: 50px;
+		left: 30px;
+	}
+
+	.basis_ld_1_0_0__bs .item .content5 {
+		top: 50px;
+		left: 30px;
+	}
+
+	.basis_ld_1_0_0__bs .item .content .name {
+		color: #233d71;
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+
+	.basis_ld_1_0_0__bs .item .content .desc {
+		font-size: 24px;
+		color: #000;
+		text-transform: uppercase;
+	}
+
+	.basis_ld_1_0_0__tabs .tab .thum-bs {
+		line-height: 0;
+	}
+
+	.basis_ld_1_0_0__tabs .tab .thum-bs:nth-child(1) {
+		border-bottom: 1px solid #5696ff;
+	}
+
+	.basis_ld_1_0_0__tabs .tab .thum-bs img {
+		width: 100%;
+		background-color: #4a7fd5;
+		padding: 21px 42px;
+	}
+
+	.basis_ld_1_0_0__tabs .tab.tns-nav-active .thum-bs img {
+		background-color: #de5259;
+	}
+
+	.basis_ld_1_0_0_tt {
+		color: #fff;
+		padding: 0 20px;
+		font-size: 16px;
+		text-transform: uppercase;
+		background-color: #0043b3;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 2px;
+	}
+
+	.basis_ld_1_0_0_box {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 40px 40px;
+	}
+
+	.basis_ld_1_0_0_boxL {
+		width: 14%;
+	}
+
+	.basis_ld_1_0_0_boxL .view {
+		margin-top: 40px;
+	}
+
+	.basis_ld_1_0_0_boxL .view a {
+		text-transform: uppercase;
+		background: #de5259;
+		color: #fff;
+		padding: 12px 30px;
+		border-radius: 25px;
+		font-size: 18px;
+	}
+
+	.basis_ld_1_0_0_boxR {
+		width: 86%;
+		background-color: #fff;
+		padding: 10px;
+	}
+
+	.basis_ld_1_0_0_boxCt {
+		background-color: #00498D;
+	}
+
+	.basis_ld_1_0_0_boxMB {
+		display: none;
+	}
+
+	@media (max-width: 1024px) {
+		.basis_ld_1_0_0_title {
+			font-size: 28px;
+		}
+
+		.basis_ld_1_0_0_title span {
+			font-size: 18px;
+		}
+
+		.basis_ld_1_0_0_boxL {
+			width: 15%;
+		}
+
+		.basis_ld_1_0_0_boxR {
+			width: 85%;
+		}
+
+		.basis_ld_1_0_0__bs .item .content1 {
+			top: 50px;
+			left: 20px;
+			width: 40%;
+		}
+
+		.basis_ld_1_0_0__bs .item .content2 {
+			width: 30%;
+			top: 140px;
+			left: 20px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content3 {
+			top: 50px;
+			left: 30px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content4 {
+			top: 50px;
+			left: 30px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content5 {
+			top: 50px;
+			left: 30px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content .name {
+			font-size: 28px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content .desc {
+			font-size: 16px;
+		}
+
+		.basis_ld_1_0_0__tabs .tab .thum-bs img {
+			padding: 21px 43px;
+		}
+	}
+
+	@media (max-width: 812px) {
+		.basis_ld_1_0_0_boxL {
+			width: 20%;
+		}
+
+		.basis_ld_1_0_0_boxR {
+			width: 80%;
+		}
+
+		.basis_ld_1_0_0__tabs .tab .thum-bs img {
+			padding: 13px 47px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content2 {
+			top: 50px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content .name {
+			font-size: 20px;
+		}
+
+		.basis_ld_1_0_0__bs .item .content .desc {
+			font-size: 16px;
+		}
+	}
+
+	@media (max-width: 414px) {
+		.basis_ld_1_0_0 {
+			background: url(images/basis_ld_1_0_0-bg-m.jpg) center 0 no-repeat;
+			background-size: 200%;
+			padding-bottom: 10px;
+		}
+
+		.basis_ld_1_0_0_title {
+			padding: 0 0 10px;
+			font-size: 24px;
+		}
+
+		.basis_ld_1_0_0_title br {
+			display: block;
+		}
+
+		.basis_ld_1_0_0_box {
+			display: none;
+		}
+
+		.basis_ld_1_0_0_boxMB {
+			display: flex;
+		}
+
+		.basis_ld_1_0_0_item {
+			background-color: #fff;
+			display: flex;
+			height: 74px;
+			margin-bottom: 4px;
+			align-items: center;
+		}
+
+		.basis_ld_1_0_0_item p {
+			color: #233d71;
+			font-size: 16px;
+			text-transform: uppercase;
+			margin: 0;
+			margin-left: 5px;
+			line-height: 18px;
+		}
+
+		.basis_ld_1_0_0_item span {
+			display: block;
+			color: #000;
+			text-transform: initial;
+		}
+
+		.basis_ld_1_0_0__tabs .tab .thum-bs {
+			line-height: 0;
+		}
+
+		.basis_ld_1_0_0__tabs .tab .thum-bs:nth-child(1) {
+			border-bottom: 4px solid #5696ff;
+		}
+
+		.basis_ld_1_0_0__tabs .tab .thum-bs img {
+			padding: 9px 15px;
+		}
+	}
+
+	@media (max-width: 375px) {
+		.basis_ld_1_0_0__tabs .tab .thum-bs img {
+			padding: 13px 15px;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.basis_ld_1_0_0__tabs .tab .thum-bs img {
+			padding: 15px 15px;
+		}
+	}
+
+	@media (max-width: 320px) {
+		.basis_ld_1_0_0__tabs .tab .thum-bs img {
+			padding: 19px 14px;
+		}
+	}
+
+	/*# sourceMappingURL=basis_ld_1_0_0.css.map */
+</style>
+
+<body>
+	<div class="basis_ld_1_0_0">
+		<div class="container">
+			<div class="basis_ld_1_0_0_boxCt">
+				<div class="basis_ld_1_0_0_title">5 lý do bạn nên lựa chọn<br> nha khoa paris
+				</div>
+				<div class="basis_ld_1_0_0_box">
+					<div class="basis_ld_1_0_0_boxL">
+						<div class="basis_ld_1_0_0__tabs" id="basis_ld_1_0_0__tabs">
+							<a href="#bs-0" class="tab">
+								<div class="thum-bs">
+									<img class="active" src="images/basis_ld_1_0_0-icon1.png" alt="">
+								</div>
+							</a>
+							<a href="#bs-1" class="tab">
+								<div class="thum-bs">
+									<img src="images/basis_ld_1_0_0-icon2.png" alt="">
+								</div>
+							</a>
+							<a href="#bs-2" class="tab">
+								<div class="thum-bs">
+									<img src="images/basis_ld_1_0_0-icon3.png" alt="">
+								</div>
+							</a>
+							<a href="#bs-3" class="tab">
+								<div class="thum-bs">
+									<img src="images/basis_ld_1_0_0-icon4.png" alt="">
+								</div>
+							</a>
+							<a href="#bs-4" class="tab">
+								<div class="thum-bs">
+									<img src="images/basis_ld_1_0_0-icon5.png" alt="">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="basis_ld_1_0_0_boxR">
+						<div class="owl-carousel owl-theme basis_ld_1_0_0__bs">
+							<div class="item" data-hash="bs-0">
+								<div class="pic">
+									<img src="images/basis_ld_1_0_0-pic1.jpg" alt="">
+								</div>
+								<div class="content content1">
+									<div class="name">
+										Quy mô rộng khắp cả nước
+									</div>
+									<div class="desc">
+										8 chi nhánh tại Hà Nội, Hải Phòng, Vinh, Đà Nẵng, TP.HCM
+									</div>
+								</div>
+							</div>
+							<div class="item" data-hash="bs-1">
+								<div class="pic">
+									<img src="images/basis_ld_1_0_0-pic2.jpg" alt="">
+								</div>
+								<div class="content content2">
+									<div class="name">
+										ĐỘI NGŨ BÁC SĨ
+										CHUYÊN MÔN CAO
+									</div>
+									<div class="desc">
+										100% bác sĩ được đào tạo
+										chuyên sâu, giàu kinh nghiệm
+									</div>
+								</div>
+							</div>
+							<div class="item" data-hash="bs-2">
+								<div class="pic">
+									<img src="images/basis_ld_1_0_0-pic3.jpg" alt="">
+								</div>
+								<div class="content content3">
+									<div class="name">
+										công nghệ thẩm mỹ răng<br>
+										hiện đại bậc nhất
+									</div>
+									<div class="desc">
+										- Xem trước kết quả<br>
+										- An toàn<br>
+										- Chắc khỏe<br>
+										- Thẩm mỹ cao
+									</div>
+								</div>
+							</div>
+							<div class="item" data-hash="bs-3">
+								<div class="pic">
+									<img src="images/basis_ld_1_0_0-pic4.jpg" alt="">
+								</div>
+								<div class="content content4">
+									<div class="name">
+										làm một lần<br>
+										đẹp trọn đời
+									</div>
+									<div class="desc">
+										phác đồ chuẩn xác<br>
+										rút ngắn thời gian tối đa
+									</div>
+								</div>
+							</div>
+							<div class="item" data-hash="bs-4">
+								<div class="pic">
+									<img src="images/basis_ld_1_0_0-pic5.jpg" alt="">
+								</div>
+								<div class="content content5">
+									<div class="name">
+										bảo hành chính hãng
+									</div>
+									<div class="desc">
+										nhận thẻ bảo hành quốc tế<br>
+										và bảo hành uy tín
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="basis_ld_1_0_0_boxMB">
+					<div class="basis_ld_1_0_0__tabs" id="basis_ld_1_0_0__tabs">
+						<a href="#bs-0" class="tab">
+							<div class="thum-bs">
+								<img class="active" src="images/basis_ld_1_0_0-icon1.png" alt="">
+							</div>
+						</a>
+						<a href="#bs-1" class="tab">
+							<div class="thum-bs">
+								<img src="images/basis_ld_1_0_0-icon2.png" alt="">
+							</div>
+						</a>
+						<a href="#bs-2" class="tab">
+							<div class="thum-bs">
+								<img src="images/basis_ld_1_0_0-icon3.png" alt="">
+							</div>
+						</a>
+						<a href="#bs-3" class="tab">
+							<div class="thum-bs">
+								<img src="images/basis_ld_1_0_0-icon4.png" alt="">
+							</div>
+						</a>
+						<a href="#bs-4" class="tab">
+							<div class="thum-bs">
+								<img src="images/basis_ld_1_0_0-icon5.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="basis_ld_1_0_0_content">
+						<div class="basis_ld_1_0_0_item">
+							<p>Quy mô rộng khắp cả nước
+								<span>
+									8 chi nhánh tại Hà Nội, Hải Phòng, Vinh, Đà Nẵng, TP.HCM
+								</span>
+							</p>
+						</div>
+						<div class="basis_ld_1_0_0_item">
+							<p>Đội ngũ bác sĩ chuyên môn cao
+								<span>
+									100% bác sĩ được đào tạo chuyên sâu, giàu kinh nghiệm
+								</span>
+							</p>
+						</div>
+						<div class="basis_ld_1_0_0_item">
+							<p>CN thẩm mỹ răng hiện đại bậc nhất
+								<span>
+									Xem trước kết quả - An toàn - Chắc khỏe - Thẩm mỹ cao
+								</span>
+							</p>
+						</div>
+						<div class="basis_ld_1_0_0_item">
+							<p>Làm một lần, đẹp trọn đời
+								<span>
+									Phác đồ chuẩn xác, rút ngắn thời gian tối đa
+								</span>
+							</p>
+						</div>
+						<div class="basis_ld_1_0_0_item">
+							<p>bảo hành chính hãng
+								<span>
+									Nhận thẻ bảo hành quốc tế và bảo hành uy tín đến trọn đời
+								</span>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+
+<script>
+ var basis_ld_1_0_0__bs = tns({
+        container: '.basis_ld_1_0_0__bs',
+        items: 1,
+        navContainer: '#basis_ld_1_0_0__tabs',
+        navAsThumbnails: true,
+        autoplay: false,
+        autoplayTimeout: 1000,
+        gutter: 10,
+        controls: false,
+    });
+
+
+</script>
+
+</html>

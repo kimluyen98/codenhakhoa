@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/step_ld_4_0_0.css" />
+    <script src="../../media/dist/lib.min.js"></script>
+	<script src="../../media/dist/tiny.slider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .step_ld_4_0_0 {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .step_ld_4_0_0.copy {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .step_ld_4_0_0.copy a {
+        background: #F36B44;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .step_ld_4_0_0 {
+        background: url(images/step_ld_4_0_0-bg.jpg) center 0 no-repeat;
+        padding: 30px 0;
+    }
+    
+    .step_ld_4_0_0_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #3056a0;
+    }
+    
+    .step_ld_4_0_0_title br {
+        display: none;
+    }
+    
+    .step_ld_4_0_0_title p {
+        font-size: 24px;
+        color: #000000;
+    }
+    
+    .step_ld_4_0_0_box {
+        margin-top: 20px;
+    }
+    
+    .step_ld_4_0_0__item {
+        background-color: #fff;
+        transition: 0.4s;
+    }
+
+    .step_ld_4_0_0__item img{
+        width: 100%;
+        display: block;
+    }
+    
+    .step_ld_4_0_0__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+    }
+    
+    .step_ld_4_0_0__number1 {
+        background-color: #7ed3ff;
+    }
+    
+    .step_ld_4_0_0__number2 {
+        background-color: #71bcfc;
+    }
+    
+    .step_ld_4_0_0__number3 {
+        background-color: #5ba1fc;
+    }
+    
+    .step_ld_4_0_0__number4 {
+        background-color: #4582d1;
+    }
+    
+    .step_ld_4_0_0__number5 {
+        background-color: #3056a0;
+    }
+    
+    .step_ld_4_0_0__number span {
+        font-size: 72px;
+        color: #fff;
+    }
+    
+    .step_ld_4_0_0__name {
+        display: flex;
+        justify-content: center;
+        height: 140px;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    
+    .step_ld_4_0_0__item:hover .step_ld_4_0_0__pic img {
+        transform: scale(0.95);
+        transition: 0.4s;
+    }
+    .step_ld_4_0_0__ct {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .step_ld_4_0_0_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(255, 15, 0, 0.1), 0 0 1px 20px rgba(255, 15, 0, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+    .step_ld_4_0_0_regist {
+        background-color: #ff5159;
+        color: #fff;
+        padding: 6px 0 0px;
+        border-radius: 40px;
+        text-align: center;
+        width: 300px;
+        margin: 20px auto 0;
+    }
+    
+    .step_ld_4_0_0_regist a {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+        padding: 8px 10px;
+    }
+    
+    .step_ld_4_0_0_regist i {
+        font-style: normal;
+    }
+    
+    @media (max-width: 1024px) {
+        .step_ld_4_0_0_title {
+            font-size: 30px;
+        }
+        .step_ld_4_0_0_title p {
+            font-size: 20px;
+        }
+        .step_ld_4_0_0__name {
+            height: 120px;
+            font-size: 20px;
+        }
+        .step_ld_4_0_0__ct {
+            font-size: 16px;
+            height: 100px;
+            padding: 0 10px;
+        }
+        .step_ld_4_0_0_regist {
+            width: 250px;
+        }
+        .step_ld_4_0_0_regist a {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .step_ld_4_0_0__ct {
+            height: 90px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .step_ld_4_0_0 {
+            padding-bottom: 20px;
+            background-color: #ebedec;
+        }
+        .step_ld_4_0_0_title {
+            font-size: 24px;
+        }
+        .step_ld_4_0_0_title br {
+            display: block;
+        }
+        .step_ld_4_0_0_title p {
+            font-size: 16px;
+        }
+        .step_ld_4_0_0_title span {
+            display: none;
+        }
+        .step_ld_4_0_0__number {
+            height: 80px;
+        }
+        .step_ld_4_0_0__name {
+            height: 70px;
+            font-size: 16px;
+            padding: 20px 10px;
+        }
+        .step_ld_4_0_0__ct {
+            font-size: 16px;
+            height: 85px;
+            padding: 0 10px;
+        }
+        .step_ld_4_0_0_regist {
+            width: 240px;
+        }
+        .step_ld_4_0_0_regist a {
+            font-size: 17px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .step_ld_4_0_0_title {
+            font-size: 22px;
+        }
+        .step_ld_4_0_0_title p {
+            font-size: 14px;
+        }
+        .step_ld_4_0_0__name {
+            font-size: 15px;
+            padding: 20px 5px;
+        }
+        .step_ld_4_0_0__ct {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .step_ld_4_0_0_title {
+            font-size: 19px;
+        }
+        .step_ld_4_0_0_title p {
+            font-size: 13px;
+        }
+        .step_ld_4_0_0__name {
+            font-size: 13px;
+        }
+    }
+    /*# sourceMappingURL=step_ld_4_0_0.css.map */
+</style>	
+
+<body>
+    <section id="" class="step_ld_4_0_0">
+        <div class="container">
+            <div class="step_ld_4_0_0_title">
+                quy trình cấy ghép implant <span>-</span><br> 5 bước an toàn tiêu chuẩn pháp
+                <p>không đau - không biến chứng - nhanh chóng</p>
+            </div>
+            <div class="step_ld_4_0_0_box">
+                <div>
+                    <div class="step_ld_4_0_0__item">
+                        <div class="step_ld_4_0_0__number step_ld_4_0_0__number1">
+                            <span>01</span>
+                        </div>
+                        <div class="step_ld_4_0_0__name">
+                            thăm khám, chụp hình ct cone beam
+                        </div>
+                        <div class="step_ld_4_0_0__ct">
+                            Kiểm tra tình trạng răng miệng và mật độ xương hàm
+                        </div>
+                        <div class="step_ld_4_0_0__pic">
+                            <img src="images/step_ld_4_0_0-pic1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="step_ld_4_0_0__item">
+                        <div class="step_ld_4_0_0__number step_ld_4_0_0__number2">
+                            <span>02</span>
+                        </div>
+                        <div class="step_ld_4_0_0__name">
+                            Lên kế hoạch điều trị
+                        </div>
+                        <div class="step_ld_4_0_0__ct">
+                            Lập kế hoạch cấy ghép, lập phần mềm giả định cho KH biết trước kết quả
+                        </div>
+                        <div class="step_ld_4_0_0__pic">
+                            <img src="images/step_ld_4_0_0-pic2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="step_ld_4_0_0__item">
+                        <div class="step_ld_4_0_0__number step_ld_4_0_0__number3">
+                            <span>03</span>
+                        </div>
+                        <div class="step_ld_4_0_0__name">
+                            Cấy ghép trụ Implant vào xương hàm
+                        </div>
+                        <div class="step_ld_4_0_0__ct">
+                            Gây tê kiểm soát bằng máy tính, không rạch nướu giúp lành thương nhanh
+                        </div>
+                        <div class="step_ld_4_0_0__pic">
+                            <img src="images/step_ld_4_0_0-pic3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="step_ld_4_0_0__item">
+                        <div class="step_ld_4_0_0__number step_ld_4_0_0__number4">
+                            <span>04</span>
+                        </div>
+                        <div class="step_ld_4_0_0__name">
+                            Lắp mão sứ
+                        </div>
+                        <div class="step_ld_4_0_0__ct">
+                            Sau khi trụ Implant tích hợp, bác sĩ sẽ tiến hành lắp mão sứ lên trụ
+                        </div>
+                        <div class="step_ld_4_0_0__pic">
+                            <img src="images/step_ld_4_0_0-pic4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="step_ld_4_0_0__item">
+                        <div class="step_ld_4_0_0__number step_ld_4_0_0__number5">
+                            <span>05</span>
+                        </div>
+                        <div class="step_ld_4_0_0__name">
+                            Hướng dẫn chăm sóc răng miệng
+                        </div>
+                        <div class="step_ld_4_0_0__ct">
+                            Hẹn lịch tái khám
+                        </div>
+                        <div class="step_ld_4_0_0__pic">
+                            <img src="images/step_ld_4_0_0-pic5.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step_ld_4_0_0_regist">
+                <a href="">Đăng ký tư vấn miễn phí</a>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // step_ld_4_0_0
+    var step_ld_4_0_0_box = tns({
+        container: '.step_ld_4_0_0_box',
+        items: 4,
+        slideBy: 'page',
+        autoplay: false,
+        autoplayButtonOutput: false,
+        lazyload: true,
+        nav: false,
+        mouseDrag: false,
+        gutter: 10,
+        nav: false,
+        controls: false,
+        navPosition: 'bottom',
+        lazyloadSelector: '.tns-lazy',
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+            },
+            768: {
+                items: 3,
+                nav: true,
+            },
+            1024: {
+                items: 5,
+            },
+        },
+    });
+    // end step_ld_4_0_0
+</script>
+
+</html>

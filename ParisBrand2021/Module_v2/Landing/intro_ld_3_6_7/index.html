@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro_ld_3_6_7.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .intro_ld_3_6_7 {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .intro_ld_3_6_7 {
+        margin-top: 80px;
+        margin-bottom: 200px;
+    }
+
+    .intro_ld_3_6_7_title {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .intro_ld_3_6_7_bg {
+        position: relative;
+    }
+
+    .intro_ld_3_6_7_bg img {
+        width: 100%;
+        display: block;
+    }
+
+    .intro_ld_3_6_7_box {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        left: 0;
+        color: #fff;
+    }
+
+    .intro_ld_3_6_7_box .row {
+        margin: 0;
+    }
+
+    .intro_ld_3_6_7_box .row .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .intro_ld_3_6_7_box ul {
+        padding-left: 0px;
+        margin: 15px auto;
+        width: 80%;
+    }
+
+    .intro_ld_3_6_7_box ul li {
+        font-size: 22px;
+    }
+
+    .intro_ld_3_6_7_regist {
+        color: #fff;
+        background-color: #ff222f;
+        width: 320px;
+        text-align: center;
+        transition: 0.4s;
+        margin-left: 35px;
+        padding: 8px 0;
+    }
+
+    .intro_ld_3_6_7_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(255, 255, 255, 0.1), 0 0 1px 20px rgba(255, 255, 255, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+
+    .intro_ld_3_6_7_regist i {
+        font-style: normal;
+        font-size: 14px;
+        text-transform: none;
+    }
+
+    .intro_ld_3_6_7_regist a {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    @media (max-width: 1440px) {
+        .intro_ld_3_6_7_title {
+            width: 45%;
+            margin: 0 auto;
+        }
+
+        .intro_ld_3_6_7_title img {
+            width: 100%;
+        }
+
+        .intro_ld_3_6_7_box {
+            bottom: 40px;
+        }
+
+        .intro_ld_3_6_7_box ul {
+            width: 75%;
+            margin: 15px auto;
+            padding-left: 90px;
+        }
+
+        .intro_ld_3_6_7_box ul li {
+            font-size: 17px;
+        }
+
+        .intro_ld_3_6_7_regist {
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .intro_ld_3_6_7_box {
+            bottom: 20px;
+        }
+
+        .intro_ld_3_6_7_box ul {
+            margin: 8px auto;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .intro_ld_3_6_7_box {
+            bottom: 10px;
+        }
+
+        .intro_ld_3_6_7_box ul li {
+            font-size: 13px;
+        }
+
+        .intro_ld_3_6_7_regist {
+            width: 240px;
+        }
+
+        .intro_ld_3_6_7_regist a {
+            font-size: 16px;
+        }
+
+        .intro_ld_3_6_7_regist i {
+            font-size: 11px;
+        }
+    }
+
+    @media (max-width: 812px) {
+        .intro_ld_3_6_7_title {
+            width: 40%;
+        }
+
+        .intro_ld_3_6_7_box {
+            bottom: 10px;
+        }
+
+        .intro_ld_3_6_7_box ul {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .intro_ld_3_6_7_regist {
+            width: 250px;
+            padding: 0;
+        }
+
+        .intro_ld_3_6_7_regist a {
+            padding: 7px 0px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .intro_ld_3_6_7_title {
+            width: 100%;
+            margin: 0;
+        }
+
+        .intro_ld_3_6_7_title img {
+            width: 100%;
+        }
+
+        .intro_ld_3_6_7_box {
+            bottom: 10px;
+        }
+
+        .intro_ld_3_6_7_box ul {
+            width: 90%;
+            margin: 10px auto 0;
+            padding-left: 5px;
+        }
+
+        .intro_ld_3_6_7_box ul li {
+            font-size: 14px;
+        }
+
+        .intro_ld_3_6_7_regist {
+            text-align: center;
+            width: 91%;
+            padding: 8px 0;
+            margin-top: 300px;
+        }
+
+        .intro_ld_3_6_7_regist a {
+            font-size: 16px;
+        }
+
+        .intro_ld_3_6_7_regist i {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .intro_ld_3_6_7_box ul li {
+            font-size: 13px;
+        }
+
+        .intro_ld_3_6_7_regist {
+            margin-top: 270px;
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .intro_ld_3_6_7_box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .intro_ld_3_6_7_box ul li {
+            font-size: 12px;
+        }
+
+        .intro_ld_3_6_7_regist {
+            margin-top: 220px;
+            padding: 5px 0;
+        }
+
+        .intro_ld_3_6_7_regist i {
+            font-size: 12px;
+        }
+    }
+
+    /*# sourceMappingURL=intro_ld_3_6_7.css.map */
+</style>
+
+<body>
+    <section id="" class="intro_ld_3_6_7">
+        <div class="intro_ld_3_6_7_bg">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/intro_ld_3_6_7-bg.jpg">
+                <img src="images/intro_ld_3_6_7-bg-m.jpg?ver=1" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="intro_ld_3_6_7_box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="intro_ld_3_6_7_title">
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/intro_ld_3_6_7-title.png">
+                                <img src="images/intro_ld_3_6_7-title-m.png" alt="">
+                            </picture>
+                        </div>
+                        <ul>
+                            <li>Trả góp lãi suất 0% chỉ từ 425k/ tháng</li>
+                            <li>Răng sứ tự nhiên, bền chắc trọn đời</li>
+                            <li>Miễn phí thiết kế nụ cười chuẩn nhận tướng học</li>
+                        </ul>
+                        <div class="intro_ld_3_6_7_regist">
+                            <a class="btnReg" href="#pageReg">>> Nhận ưu đãi >><br>
+                                <i>Cơ hội cho 50 KH đăng ký sớm nhất</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.intro_ld_3_6_1 {
+    @extend %font1;
+    margin-top: 80px;
+    &_bg {
+        position: relative;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &_box {
+        position: absolute;
+        bottom: 80px;
+        right: 0;
+        left: 0;
+        color: #fff;
+        .row {
+            margin: 0;
+            .col-md-6 {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+        ul {
+            padding-left: 0px;
+            margin: 15px auto;
+            width: 80%;
+            li {
+                font-size: 22px;
+            }
+        }
+    }
+    &_regist {
+        color: #fff;
+        background-color: #ff3f3a;
+        width: 300px;
+        text-align: center;
+        transition: 0.4s;
+        margin-left: 35px;
+        padding: 8px 0;
+        &:hover {
+            box-shadow: 0 0 1px 3px rgba(#ff0f00, 0.8), 0 0 1px 10px rgba(#fff, 0.1), 0 0 1px 20px rgba(#fff, 0.1);
+            border-radius: 40px;
+            transition: 0.4s;
+        }
+        i {
+            font-style: normal;
+            font-size: 14px;
+            text-transform: none;
+        }
+        a {
+            display: block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 24px;
+            line-height: 1;
+        }
+    }
+}
+
+@media #{$r1440} {
+    .intro_ld_3_6_1 {
+        &_title {
+            width: 70%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &_box {
+            bottom: 30px;
+            ul {
+                width: 75%;
+                margin: 15px auto;
+                padding-left: 90px;
+                li {
+                    font-size: 17px;
+                }
+            }
+        }
+        &_regist {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media #{$r1280} {
+    .intro_ld_3_6_1 {
+        &_box {
+            bottom: 15px;
+            ul{
+                margin: 8px auto;
+            }
+        }
+    }
+}
+
+@media #{$r1024} {
+    .intro_ld_3_6_1 {
+        &_title{
+            width: 60%;
+        }
+        &_box {
+            bottom: 15px;
+            ul {
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+        &_regist{
+            width: 240px;
+            a{
+                font-size: 16px;
+            }
+            i{
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .intro_ld_3_6_1 {
+        &_title {
+            width: 60%;
+            img {
+                width: 100%;
+            }
+        }
+        &_box {
+            bottom: 8px;
+            ul {
+                width: 100%;
+                margin-top: 0px;
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+        &_regist {
+            width: 250px;
+            padding: 0;
+            a {
+                padding: 7px 0px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media #{$r414} {
+    .intro_ld_3_6_1 {
+        &_title {
+            width: 90%;
+            img {
+                width: 100%;
+            }
+        }
+        &_box {
+            bottom: 10px;
+            ul {
+                width: 90%;
+                margin:-20px auto 0;
+                padding-left: 30px;
+                li{
+                    font-size: 15px;
+                }
+            }
+        }
+        &_regist {
+            text-align: center;
+            width: 75%;
+            padding: 8px 0;
+            margin-top: 290px;
+            a {
+                font-size: 16px;
+            }
+            i{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media #{$r375} {
+    .intro_ld_3_6_1 {
+        &_box{
+            ul{
+                li{
+                    font-size: 13px;
+                }
+            }
+        }
+        &_regist{
+            margin-top: 260px;
+            width: 85%;
+        }
+    }
+}
+
+@media #{$r320} {
+    .intro_ld_3_6_1 {
+        &_box {
+            ul{
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+        &_regist {
+            margin-top: 220px;
+            padding: 5px 0;
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}

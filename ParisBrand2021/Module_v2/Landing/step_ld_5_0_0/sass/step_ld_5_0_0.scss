@@ -1,0 +1,210 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.step_ld_5_0_0 {
+    @extend %font1;
+    background-color:#013387;
+    padding: 30px 0;
+    &_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #fff;
+        p {
+            font-size: 24px;
+            color: #dd4558;
+        }
+    }
+    &_box{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        position: relative;
+        transition: 0.4s;
+        &:hover{
+            .step_ld_5_0_0__pic{
+                img{
+                    transform: scale(0.95);
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+    &__pic{
+        padding:0 10px;
+        img{
+            width: 100%;
+        }
+    }
+    &__number{
+        margin: 20px 0;
+        position: relative;
+        text-align: center;
+        span{
+            font-size: 32px;
+            color: #fff;
+            background-color: #c84854;
+            border-radius: 50%;
+            padding:5px 16px;
+            z-index: 4;
+        }
+       
+    }
+    &__line{
+        margin-top: -23px;
+        height: 2px;
+        border:1px solid #6978ad;
+        width: 100%;
+    }
+    &__name{
+        color: #88c8da;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        padding:20px;
+    }
+    &__des{
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__ct{
+        font-size: 16px;
+        justify-content: center;
+        height: 80px; 
+        text-align: center;
+        padding:0 20px;
+    }
+    &_regist {
+        border-radius: 40px;
+        margin:30px auto 0;
+        color: #fff;
+        background-color: #ff5159;
+        width: 320px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 7px 0;
+        &:hover {
+            box-shadow: 0 0 1px 3px rgba(#ff0f00, 0.8), 0 0 1px 10px rgba(#ff0f00, 0.1), 0 0 1px 20px rgba(#ff0f00, 0.1);
+            border-radius: 40px;
+            transition: 0.4s;
+        }
+        a {
+            display: block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 24px;
+            line-height: 1;
+            padding:8px 10px;
+        }
+    }
+}
+
+@media #{$r1024} {
+    .step_ld_5_0_0 {
+        &_title {
+            font-size: 30px;
+            p {
+                font-size: 20px;
+            }
+        }
+        &__name{
+            font-size: 18px;
+        }
+        &__ct{
+            font-size: 16px;
+            height: 100px; 
+            padding:0 10px;
+        }
+        &_regist {
+            width: 250px;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media #{$r768}{
+    .step_ld_5_0_0{
+        &_title{
+            font-size: 28px;
+        }
+        &__ct{
+            height: 90px; 
+        } 
+        &__name{
+            font-size: 16px;
+        }
+         
+    }
+}
+@media #{$r414} {
+    .step_ld_5_0_0 {
+        padding-bottom: 20px;
+        &_title {
+            font-size: 24px;
+            br {
+                display: block;
+            }
+            p {
+                font-size: 16px;
+            }
+            span{
+                display: none;
+            }
+        }
+        &__pic{
+            padding:0;
+        }
+        &__name{
+            font-size: 24px;
+            text-align: center;
+        }
+        &__item{
+            width: 100%;
+        }
+        &__ct{
+            font-size: 16px;
+            height: 85px; 
+            padding:0 10px;
+        }
+        &__des{
+            font-size: 16px;
+        }
+        &_box{
+            display: none;
+        }
+        &_box1{
+            display: block!important;
+            margin-top: 20px;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+            background: #006cff;
+        }
+        &_regist {
+            width: 240px;
+            margin: 10px auto 0;
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+}

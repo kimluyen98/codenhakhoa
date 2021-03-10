@@ -1,0 +1,295 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.price_ld_5_0_0 {
+    @extend %font1;
+    padding: 30px 0;
+    &_title {
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #fff;
+        p {
+            font-size: 24px;
+        }
+    }
+    &_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_boxL{
+        width: 40%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    &_tt{
+        position: absolute;
+        top:40px;
+        left: 20px;
+    }
+    &_boxR{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_pic{
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    &_ud{
+        position: absolute;
+        top:160px;
+        left: 34%;
+        display: inline-block;
+        padding: 10px 5px;
+        border-radius: 50%;
+        background-color: #de5259;
+        color: #fff;
+        font-size: 36px;
+    }
+    &_ct{
+        display: flex;
+        flex-wrap: wrap;
+        height: 150px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 24px;
+        span{
+            display: block;
+            font-size: 16px;
+        }
+    }
+    &_item{
+        width: 33%;
+        position: relative;
+        background-color: #f7f7f7;
+        transition: 0.8s ease;
+        &:hover{
+            background-color: #0055a4;
+            color: #fff;
+            .price_ld_5_0_0_pic{
+                img{
+                    transform: scale(0.94);
+                    transition: 0.8s ease;
+                    -webkit-transition: 0.8s ease;
+                }
+            }
+        }
+
+    }
+    &_regist {
+        transition: 0.4s;
+        margin:50px auto 0;
+        &:hover {
+            a{
+                box-shadow: 0 0 1px 3px rgba(#aefeff, 0.8), 0 0 1px 10px rgba(#aefeff, 0.1), 0 0 1px 20px rgba(#aefeff, 0.1);
+                border-radius: 40px;
+                transition: 0.4s;
+            }
+        }
+        a {
+            display: inline-block;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 24px;
+            line-height: 1;
+            background-color: #ff5159;
+            color: #fff;
+            border-radius: 40px;
+        }
+    }
+    &_registMB{
+        display: none;
+    }
+}
+
+@media #{$r1024} {
+    .price_ld_5_0_0 {
+        min-height: 510px;
+        &_title {
+            font-size: 30px;
+            p {
+                font-size: 18px;
+            }
+        }
+        &_item {
+            &__top {
+                span {
+                    font-size: 60px;
+                }
+            }
+            &__text {
+                padding: 10px 0;
+                height: 120px;
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        &_ud{
+            top:130px;
+            left: 34%;
+            font-size: 28px;
+        }
+        &_ct{
+            margin-top: 40px;
+            height: 130px;
+            font-size: 20px;
+        }
+        &_regist {
+            a {
+                font-size: 18px;
+                line-height: 1.2;
+            }
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .price_ld_5_0_0 {
+        &_title {
+            font-size: 22px;
+            p {
+                font-size: 15px;
+            }
+        }
+        &_ud{
+            top: 91px;
+            left: 32%;
+            font-size: 23px;
+        }
+        &_ct{
+            margin-top: 30px;
+            height: 140px;
+            font-size: 17px;
+        }
+        &_regist{
+            margin: 30px auto 0;
+        }
+    }
+}
+
+@media #{$r414} {
+    .price_ld_5_0_0 {
+        background: url(../images/price_ld_5_0_0-bg-m.jpg) center 0 no-repeat;
+        &_title {
+            font-size: 22px;
+            p {
+                font-size: 16px;
+            }
+            br{
+                display: none;
+            }
+        }
+        &_box{
+            display: block;
+        }
+        &_boxL{
+            width: 100%;
+            img{
+                display: none;
+            }
+        }
+        &_boxR{
+            width: 100%;
+            margin-top: 20px;
+
+        }
+        &_ct{
+            font-size: 16px;
+            height: 100px;
+            span{
+                font-size: 14px;
+            }
+        }
+        &_item{
+            width: 50%;
+        }
+        &_ud{
+            top: 131px;
+            left: 35%;
+            font-size: 25px
+        }
+        &_tt{
+            position: relative;
+            left: auto;
+            top:auto;
+            text-align: center;
+        }
+        &_regist {
+           display: none;
+        }
+        &_registMB {
+            display: block;
+            transition: 0.4s;
+            margin-top: 20px;
+            text-align: center;
+            &:hover {
+                a{
+                    box-shadow: 0 0 1px 3px rgba(#aefeff, 0.8), 0 0 1px 10px rgba(#aefeff, 0.1), 0 0 1px 20px rgba(#aefeff, 0.1);
+                    border-radius: 40px;
+                    transition: 0.4s;
+                }
+            }
+            a {
+                display: inline-block;
+                text-transform: uppercase;
+                color: #fff;
+                padding: 12px 30px;
+                font-size: 18px;
+                line-height: 1;
+                background-color: #ff5159;
+                color: #fff;
+                border-radius: 40px;
+            }
+        }
+        &_regist{
+            display: none;
+        }
+    }
+}
+
+@media #{$r375} {
+    .price_ld_5_0_0 {
+       &_ud{
+        top: 110px;
+       }
+    }
+}
+@media #{$r320} {
+    .price_ld_5_0_0 {
+        &_ud{
+            top: 90px;
+        }
+        &_ct{
+            font-size: 14px;
+            span{
+                font-size: 13px;
+            }
+        }
+    }
+}

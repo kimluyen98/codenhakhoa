@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paris FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/doctor_ld_3_1_1.css" /> -->
+	<script src="../../media/dist/lib.min.js"></script>
+	<script src="../../media/dist/tiny.slider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .doctor_ld_3_1_1 {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+    .doctor_ld_3_1_1.copy {
+        text-align: center;
+        padding: 20px 0;
+        min-height:0;
+    }
+    .doctor_ld_3_1_1.copy a {
+        background: #F36B44;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .doctor_ld_3_1_1 {
+        padding-bottom: 30px;
+    }
+    .doctor_ld_3_1_1 .mb {
+    display: none;
+    }
+    .doctor_ld_3_1_1 .modal-box {
+    position: relative;
+    width: 50%;
+    max-width: 560px;
+    margin: 100px auto;
+    }
+    @media (max-width: 414px) {
+    .doctor_ld_3_1_1 .modal-box {
+        width: 90%;
+    }
+    }
+    .doctor_ld_3_1_1 .modal-header {
+    padding: 10px 20px;
+    background: #0038c8 !important;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #e9ecef !important;
+    }
+    .doctor_ld_3_1_1 .modal-boddy {
+    color: #000;
+    font-size: 16px;
+    min-height: auto !important;
+    }
+    .doctor_ld_3_1_1 .modal-title {
+    color: #fff;
+    text-transform: uppercase;
+    }
+    .doctor_ld_3_1_1 .modal-close {
+    color: #fff;
+    margin-top: -30px;
+    }
+    
+    .doctor_ld_3_1_1_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #3056a0;
+    }
+    
+    .doctor_ld_3_1_1_title p {
+        font-size: 24px;
+        color: #000000;
+    }
+    
+    .doctor_ld_3_1_1_box {
+        margin-top: 30px;
+    }
+    
+    .doctor_ld_3_1_1__item {
+        margin-bottom: 15px;
+        margin-right: 20px;
+    }
+    
+    .doctor_ld_3_1_1__item a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 15px;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .doctor_ld_3_1_1__item.tns-nav-active {
+        background-color: #eeeeee;
+        border-radius: 15px;
+    }
+    
+    .doctor_ld_3_1_1__ct {
+        width: 80%;
+        color: #477dfb;
+        text-transform: uppercase;
+        font-size: 24px;
+        padding-left: 10px;
+    }
+    
+    .doctor_ld_3_1_1__ct ul {
+        line-height: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .doctor_ld_3_1_1__ct ul li {
+        text-transform: capitalize;
+        list-style: none;
+        font-size: 16px;
+        color: #000000;
+    }
+    
+    .doctor_ld_3_1_1__pic {
+        width: 12%;
+        line-height: 0;
+    }
+    
+    .doctor_ld_3_1_1__pic img {
+        width: 100%;
+        border-radius: 100%;
+    }
+    
+    .doctor_ld_3_1_1_content {
+        padding: 30px 30px;
+        box-shadow: -4px 7px 15px 0px #eee;
+    }
+    
+    .doctor_ld_3_1_1 .scrollbar {
+        height: 360px;
+        width: 540px;
+        overflow-y: scroll;
+        margin-bottom: 25px;
+        margin: 0 auto;
+    }
+    
+    @media (max-width: 1280px) {
+        .doctor_ld_3_1_1 .scrollbar {
+            width: 450px;
+        }
+    }
+    
+    .doctor_ld_3_1_1 .force-overflow {
+        min-height: 450px;
+    }
+    
+    .doctor_ld_3_1_1 #style-1::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(61, 109, 217, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    .doctor_ld_3_1_1 #style-1::-webkit-scrollbar {
+        width: 8px;
+        background-color: #F5F5F5;
+    }
+    
+    .doctor_ld_3_1_1 #style-1::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(61, 109, 217, 0.3);
+        background-color: #6276a5;
+    }
+    
+    .doctor_ld_3_1_1_regist {
+        border-radius: 40px;
+        margin: 30px auto 0;
+        color: #fff;
+        background-color: #ff5159;
+        width: 320px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 7px 0;
+    }
+    
+    .doctor_ld_3_1_1_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(255, 15, 0, 0.1), 0 0 1px 20px rgba(255, 15, 0, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+    
+    .doctor_ld_3_1_1_regist a {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+        padding: 8px 10px;
+    }
+    
+    .doctor_ld_3_1_1_registMB {
+        display: none;
+    }
+
+    
+    @media (max-width: 1280px) {
+        .doctor_ld_3_1_1 .scrollbar {
+            height: 360px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .doctor_ld_3_1_1 {
+            min-height: 490px;
+        }
+        .doctor_ld_3_1_1_title {
+            font-size: 30px;
+        }
+        .doctor_ld_3_1_1_box_tieude {
+            font-size: 18px;
+        }
+        .doctor_ld_3_1_1_boxGr {
+            margin-top: 30px;
+        }
+        .doctor_ld_3_1_1_boxGr img {
+            width: 100%;
+        }
+        .doctor_ld_3_1_1_regist {
+            font-size: 13px;
+            width: 45%;
+            margin-top: 40px;
+            width: 280px;
+        }
+        .doctor_ld_3_1_1_regist a {
+            font-size: 18px;
+        }
+        .doctor_ld_3_1_1 .scrollbar {
+            height: 330px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .doctor_ld_3_1_1 .pc {
+            display: none;
+        }
+        .doctor_ld_3_1_1 .mb {
+            display: block;
+        }
+        .doctor_ld_3_1_1_title {
+            font-size: 24px;
+        }
+        .doctor_ld_3_1_1_boxOwl {
+            display: none !important;
+        }
+        .doctor_ld_3_1_1 .scrollbar {
+            width: 650px;
+        }
+        .doctor_ld_3_1_1__ct {
+            font-size: 18px;
+        }
+        .doctor_ld_3_1_1__ct ul li {
+            font-size: 15px;
+        }
+        
+    }
+    
+    @media (max-width: 414px) {
+        .doctor_ld_3_1_1_title {
+            text-align: center;
+            font-size: 22px;
+        }
+        .doctor_ld_3_1_1_title br {
+            display: none;
+        }
+        .doctor_ld_3_1_1_title p {
+            font-size: 14px;
+        }
+        .doctor_ld_3_1_1__ct ul li {
+            font-size: 14px;
+        }
+        .doctor_ld_3_1_1_content {
+            padding: 20px 30px;
+        }
+        .doctor_ld_3_1_1 .scrollbar {
+            width: 100%;
+            height: 350px;
+        }
+        .doctor_ld_3_1_1_box {
+            margin-top: 10px;
+        }
+        .doctor_ld_3_1_1__box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .doctor_ld_3_1_1_box_tieude {
+            width: 40%;
+            order: 2;
+        }
+        .doctor_ld_3_1_1 .col-md-6.doctor_ld_3_1_1_da {
+            order: 2;
+        }
+        .doctor_ld_3_1_1__item {
+            flex-wrap: wrap;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        .doctor_ld_3_1_1__pic {
+            width: 20%;
+        }
+        .doctor_ld_3_1_1__pic img {
+            width: 100%;
+        }
+        .doctor_ld_3_1_1_box_tieude {
+            font-size: 14px;
+        }
+        .doctor_ld_3_1_1__ct {
+            width: 80%;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        .doctor_ld_3_1_1__regist {
+            margin: 10px auto 0;
+            width: 250px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .doctor_ld_3_1_1_title {
+            font-size: 20px;
+        }
+        .doctor_ld_3_1_1_content {
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .doctor_ld_3_1_1_title {
+            font-size: 18px;
+        }
+        .doctor_ld_3_1_1_box_tieude {
+            font-size: 14px;
+        }
+        .doctor_ld_3_1_1_item__pic {
+            left: 20px;
+        }
+        .doctor_ld_3_1_1_item__bottom {
+            padding-top: 45px;
+            font-size: 14px;
+        }
+        .doctor_ld_3_1_1_regist {
+            width: 240px;
+        }
+    }
+    /*# sourceMappingURL=doctor_ld_3_1_1.css.map */
+</style>	
+
+<body>
+    <section id="" class="doctor_ld_3_1_1">
+        <div class="container">
+            <div class="doctor_ld_3_1_1_content">
+                <div class="doctor_ld_3_1_1_title">ĐỘI NGŨ BÁC SĨ LÀ NHỮNG CHUYÊN GIA ĐẦU NGÀNH<br> TRÊN 20 NĂM KINH NGHIỆM
+                </div>
+                <div class="doctor_ld_3_1_1_box">
+                    <div class="row">
+                        <div class="col-md-6 doctor_ld_3_1_1_da">
+                            <div class="doctor_ld_3_1_1__box">
+                                <div class="doctor_ld_3_1_1__content scrollbar" id="style-1">
+                                    <div class="force-overflow doctor_ld_3_1_1_tabs2" id="doctor_ld_3_1_1_tabs2">
+                                        <div class="doctor_ld_3_1_1__item ">
+                                            <a href="#doctor_ld_3_1_1_bs-Tram" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsTram.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    TS.BS. Đàm Ngọc Trâm<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Giám đốc chuyên môn chuỗi hệ thống nha khoa Paris
+                                                        </li>
+                                                        <li>
+                                                            • Tiến sĩ chuyên ngành Răng hàm mặt hơn 20 năm kinh nghiệm.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Tarot" class="active tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsTarot.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    GS.BS. Philippe Tarot<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Cố vấn chuyên môn tại nha khoa Paris
+                                                        </li>
+                                                        <li>
+                                                            • Giáo sư răng hàm mặt Pháp trên 35 năm kinh nghiệm
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Vatto" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsVatto.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    MRS. Tiina Vatto<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Cố vấn công nghệ cấp cao tại nha khoa Paris
+                                                        </li>
+                                                        <li>
+                                                            • Giám đốc phát triển ứng dụng nha khoa Kavo Global, Phần Lan
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Thanh" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsThanh.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    BS. Mai Thế Thanh<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Phó giám đốc chuyên môn nha khoa Paris miền Bắc
+                                                        </li>
+                                                        <li>
+                                                            • Chuyên gia phục hình răng sứ 20 năm kinh nghiệm
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Hieu" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsHiep.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    BS.Trần Minh Hiệp<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Phó giám đốc chuyên môn miền Bắc 2
+                                                        </li>
+                                                        <li>
+                                                            • Thành viên Hiệp hội nha khoa thẩm mỹ châu Âu ESCD
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Lam" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsLam.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    BS. Hoàng Thế Lâm<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Phó Giám Đốc Chuyên Môn Hệ Thống Nha Khoa Paris miền Nam
+                                                        </li>
+                                                        <li>
+                                                            • Phục hình trên 2000 răng sứ, dán Veneer phức tạp
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Tuan" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsTuan.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    BS. Phan Văn Tuấn<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Phó Giám đốc chuyên môn nha khoa Paris miền Trung
+                                                        </li>
+                                                        <li>
+                                                            • Chuyên gia răng sứ thẩm mỹ & dán sứ Veneer
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="doctor_ld_3_1_1__item">
+                                            <a href="#doctor_ld_3_1_1_bs-Hoai" class="tab">
+                                                <div class="doctor_ld_3_1_1__pic">
+                                                    <img src="images/bsHoai.jpg">
+                                                </div>
+                                                <div class="doctor_ld_3_1_1__ct">
+                                                    BS. Phan Tiến Hoài<br>
+                                                    <ul>
+                                                        <li>
+                                                            • Chuyên gia phục hình răng sứ & dán sứ Veneer
+                                                        </li>
+                                                        <li>
+                                                            • Thực hiện trên 2000 ca bọc răng sứ thẩm mỹ
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doctor_ld_3_1_1_regist doctor_ld_3_1_1_registMB">
+                                <a href="">ĐĂNG KÝ KHÁM MIỄN PHÍ NGAY
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="doctor_ld_3_1_1_boxOwl">
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Tram">
+                                    <img src="images/doctor_ld_3_1_1-pic1.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Tarot">
+                                    <img src="images/doctor_ld_3_1_1-pic2.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Vatto">
+                                    <img src="images/doctor_ld_3_1_1-pic3.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Thanh">
+                                    <img src="images/doctor_ld_3_1_1-pic4.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Hieu">
+                                    <img src="images/doctor_ld_3_1_1-pic5.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Lam">
+                                    <img src="images/doctor_ld_3_1_1-pic6.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Tuan">
+                                    <img src="images/doctor_ld_3_1_1-pic7.jpg">
+                                </div>
+                                <div class="doctor_ld_3_1_1_item" data-hash="doctor_ld_3_1_1_bs-Hoai">
+                                    <img src="images/doctor_ld_3_1_1-pic8.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var doctor_ld_3_1_1_boxOwl = tns({
+        container: '.doctor_ld_3_1_1_boxOwl',
+        items: 1,
+        navContainer: '#doctor_ld_3_1_1_tabs2',
+        navAsThumbnails: true,
+        autoplay: false,
+        autoplayTimeout: 1000,
+        gutter: 10,
+        controls: false,
+    });
+</script>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Paris FRAMEWORK</title>
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport"
+        content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <script src="../../media/dist/lib.min.js"></script>
+	<script src="../../media/dist/tiny.slider.min.js"></script>
+</head>
+<style>
+    a {
+            text-decoration: none;
+    }
+
+    .step_ld_5_1_0 {
+            font-family: "Roboto Condensed", sans-serif;
+    }
+    .step_ld_5_1_0.copy {
+        text-align: center;
+        padding: 20px 0;
+        min-height: 0
+    }
+    .step_ld_5_1_0.copy a {
+        background: #F36B44;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .step_ld_5_1_0 {
+            background: url(images/step_ld_5_1_0-bg.jpg) center 0 no-repeat;
+            padding: 30px 0;
+    }
+
+    .step_ld_5_1_0_title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+    }
+
+    .step_ld_5_1_0_title p {
+            font-size: 24px;
+    }
+
+    .step_ld_5_1_0_box {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+    .step_ld_5_1_0__item {
+            position: relative;
+            transition: 0.8s ease;
+            -webkit-transition: 0.8s ease;
+    }
+
+    .step_ld_5_1_0__item:hover .step_ld_5_1_0__pic img {
+            transform: scale(0.95);
+            transition: 0.8s ease;
+            -webkit-transition: 0.8s ease;
+    }
+
+    .step_ld_5_1_0__item:hover .step_ld_5_1_0_bgText {
+            background-color: #de5259;
+            color: #fff;
+    }
+
+    .step_ld_5_1_0__item:hover .step_ld_5_1_0_bgText img {
+            opacity: 0;
+    }
+
+    .step_ld_5_1_0__item:hover .step_ld_5_1_0__des {
+            color: #fff;
+    }
+
+    .step_ld_5_1_0__item:hover .step_ld_5_1_0__des ul li {
+            color: #fff;
+    }
+
+    .step_ld_5_1_0__des {
+            color: #26478f;
+            font-size: 22px;
+            position: absolute;
+            z-index: 2;
+            padding: 20px 30px;
+    }
+
+    .step_ld_5_1_0__des ul {
+            font-size: 20px;
+            padding: 0;
+    }
+
+    .step_ld_5_1_0__des ul li {
+            color: #000;
+            list-style: none;
+    }
+
+    .step_ld_5_1_0_bgText {
+            position: relative;
+    }
+
+    .step_ld_5_1_0__picSpec {
+            order: 2;
+    }
+
+    .step_ld_5_1_0__pic img {
+            width: 100%;
+            display: block;
+    }
+
+    .step_ld_5_1_0__itemSpec {
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+    @media (max-width: 1024px) {
+            .step_ld_5_1_0_title {
+                    font-size: 30px;
+            }
+
+            .step_ld_5_1_0_title p {
+                    font-size: 20px;
+            }
+
+            .step_ld_5_1_0__des {
+                    font-size: 18px;
+            }
+
+            .step_ld_5_1_0__des ul {
+                    font-size: 16px;
+            }
+    }
+
+    @media (max-width: 812px) {
+            .step_ld_5_1_0_title {
+                    font-size: 28px;
+            }
+    }
+
+    @media (max-width: 414px) {
+            .step_ld_5_1_0 {
+                    padding-bottom: 20px;
+            }
+
+            .step_ld_5_1_0_title {
+                    font-size: 24px;
+            }
+
+            .step_ld_5_1_0_title br {
+                    display: block;
+            }
+
+            .step_ld_5_1_0_title p {
+                    font-size: 16px;
+            }
+
+            .step_ld_5_1_0_title span {
+                    display: none;
+            }
+
+            .step_ld_5_1_0__picSpec {
+                    order: 0;
+            }
+
+            .step_ld_5_1_0_bgText {
+                    height: 230px;
+            }
+
+            .step_ld_5_1_0__des {
+                    top: 330px;
+                    font-size: 24px;
+            }
+
+            .step_ld_5_1_0__des ul {
+                    font-size: 16px;
+            }
+
+            .step_ld_5_1_0 .owl-theme .owl-dots .owl-dot.active span,
+            .step_ld_5_1_0 .owl-theme .owl-dots .owl-dot:hover span {
+                    background: #006cff;
+            }
+    }
+
+    @media (max-width: 375px) {
+            .step_ld_5_1_0__des {
+                    top: 290px;
+            }
+
+            .step_ld_5_1_0__des ul {
+                    margin: 0;
+            }
+    }
+
+    @media (max-width: 320px) {
+            .step_ld_5_1_0__des {
+                    top: 250px;
+                    font-size: 18px;
+            }
+    }
+
+    /*# sourceMappingURL=step_ld_5_1_0.css.map */
+</style>
+
+<body>
+    <section id="" class="step_ld_5_1_0">
+        <div class="container">
+            <div class="step_ld_5_1_0_title">
+                QUY TRÌNH NHA KHOA AN TOÀN
+                <p>Không đau - Không biến chứng</p>
+            </div>
+            <div class="step_ld_5_1_0_box owl-carousel owl-theme">
+                <div class="step_ld_5_1_0__item">
+                    <div class="step_ld_5_1_0__pic">
+                        <img src="images/step_ld_5_1_0-pic1.jpg">
+                    </div>
+                    <div class="step_ld_5_1_0__des">
+                        ĐIỀU TRỊ VÔ TRÙNG
+                        <ul>
+                            <li> • Hệ thống đèn khử trùng
+                                Tạo môi trường vô khuẩn</li>
+                            <li> • Vô trùng đạt chuẩn Bộ Y Tế
+                                Dụng cụ, Thiết bị, Thao tác</li>
+                        </ul>
+                    </div>
+                    <div class="step_ld_5_1_0_bgText">
+                        <img src="images/step_ld_5_1_0-pic44.jpg">
+                    </div>
+                </div>
+                <div class="step_ld_5_1_0__item step_ld_5_1_0__itemSpec">
+                    <div class="step_ld_5_1_0__pic step_ld_5_1_0__picSpec">
+                        <img src="images/step_ld_5_1_0-pic2.jpg">
+                    </div>
+                    <div class="step_ld_5_1_0__des step_ld_5_1_0__desSpec">
+                        CAM KẾT KHÔNG ĐAU
+                        <ul>
+                            <li>• Gây tê 2 bước </li>
+                            </li>
+                            <li> • Bôi tê mô mềm trước tiêm tê
+                            <li>
+                                - Không đau buốt với áp lực tiêm
+                            </li>
+                            <li>
+                                - Quá trình làm không cảm giác
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="step_ld_5_1_0_bgText">
+                        <img src="images/step_ld_5_1_0-pic44.jpg">
+                    </div>
+                </div>
+                <div class="step_ld_5_1_0__item">
+                    <div class="step_ld_5_1_0__pic">
+                        <img src="images/step_ld_5_1_0-pic3.jpg">
+
+                    </div>
+                    <div class="step_ld_5_1_0__des">
+                        LÀNH THƯƠNG NHANH CHÓNG
+                        <ul>
+                            <li>• Máy siêu âm Piezotome</li>
+                            </li>
+                            <li>- Hạn chế cắt rạch, tổn thương mô mềm
+                            <li>
+                                - Hết tê không gây đau đớn
+                            </li>
+                            <li>
+                                • Cấy huyết tương giàu tiểu cầu PRP. Kích thích tăng sinh tế bào hồi phục nhanh
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="step_ld_5_1_0_bgText">
+                        <img src="images/step_ld_5_1_0-pic55.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // step_ld_5_1_0
+        var step_ld_5_1_0_box = tns({
+            container: '.step_ld_5_1_0_box',
+            items: 4,
+            slideBy: 'page',
+            autoplay: false,
+            autoplayButtonOutput: false,
+            lazyload: true,
+            nav: false,
+            mouseDrag: false,
+            loop: false,
+            gutter: 0,
+            nav: false,
+            controls: false,
+            navPosition: 'bottom',
+            lazyloadSelector: '.tns-lazy',
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true,
+                },
+                768: {
+                    items: 2,
+                    nav: true,
+                },
+                1024: {
+                    items: 3,
+                },
+            },
+        });
+        // end step_ld_5_1_0
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,22 @@
+.breadcrumb_1_1_0 {
+  width: 100%;
+  height: auto;
+  padding: 10px 0 10px 20px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.breadcrumb_1_1_0 p {
+  margin: 0;
+}
+.breadcrumb_1_1_0 span {
+  color: #333;
+}
+.breadcrumb_1_1_0 a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=breadcrumb_1_1_0.css.map */

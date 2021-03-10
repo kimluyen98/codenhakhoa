@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/service_ld_3_1_0.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .service_ld_3_1_0 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .service_ld_3_1_0 {
+        background: url(images/service_ld_3_1_0-bg.jpg) center 0 no-repeat;
+        min-height: 600px;
+        padding: 40px 0 20px;
+    }
+    
+    .service_ld_3_1_0 .row {
+        margin: 0;
+        align-items: center;
+    }
+    
+    .service_ld_3_1_0 .row .col-md-5,
+    .service_ld_3_1_0 .row .col-md-7 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .service_ld_3_1_0 .mb {
+        display: none;
+    }
+    
+    .service_ld_3_1_0_title {
+        color: #0055a4;
+        text-transform: uppercase;
+        font-size: 36px;
+        text-align: left;
+        padding: 20px 0;
+    }
+    
+    .service_ld_3_1_0_title p {
+        color: #000;
+        font-size: 24px;
+    }
+    
+    .service_ld_3_1_0_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .service_ld_3_1_0_item {
+        width: 48%;
+    }
+    
+    .service_ld_3_1_0_item:nth-child(1) {
+        margin-top: 30px;
+    }
+    
+    .service_ld_3_1_0_item__sub {
+        background-color: #fff;
+        color: #006ddd;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px 0 30px;
+        margin-bottom: 25px;
+        transition: 0.4s;
+        font-size: 24px;
+        box-shadow: 0 0 8px 3px #ccc;
+    }
+    
+    .service_ld_3_1_0_item__sub:hover {
+        background-color: #006ddd;
+        color: #fff;
+        transition: 0.4s;
+    }
+    
+    .service_ld_3_1_0_item__sub p {
+        padding-top: 25px;
+        margin-bottom: 0;
+    }
+    
+    .service_ld_3_1_0_item__pic {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .service_ld_3_1_0_item__pic img {
+        width: 100%;
+        display: block;
+        border-radius: 25px;
+    }
+    
+    .service_ld_3_1_0_regist {
+        color: #fff;
+        background-color: #ff5159;
+        width: 300px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 6px 0;
+        border-radius: 40px;
+    }
+    
+    .service_ld_3_1_0_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(255, 15, 0, 0.1), 0 0 1px 20px rgba(255, 15, 0, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+    
+    .service_ld_3_1_0_regist i {
+        font-style: normal;
+        font-size: 16px;
+        text-transform: none;
+    }
+    
+    .service_ld_3_1_0_regist a {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    @media (max-width: 1024px) {
+        .service_ld_3_1_0 {
+            min-height: 560px;
+        }
+        .service_ld_3_1_0_title {
+            font-size: 28px;
+        }
+        .service_ld_3_1_0_title p {
+            font-size: 20px;
+        }
+        .service_ld_3_1_0_item__sub {
+            font-size: 20px;
+        }
+        .service_ld_3_1_0_regist {
+            width: 250px;
+        }
+        .service_ld_3_1_0_regist a {
+            font-size: 18px;
+            line-height: 1.2;
+        }
+        .service_ld_3_1_0_regist i {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .service_ld_3_1_0 {
+            min-height: 500px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .service_ld_3_1_0 {
+            background: #f5f5f5;
+            padding: 0 0 10px;
+        }
+        .service_ld_3_1_0 .pc {
+            display: none;
+        }
+        .service_ld_3_1_0 .mb {
+            display: block;
+        }
+        .service_ld_3_1_0_title {
+            text-align: center;
+        }
+        .service_ld_3_1_0_item__sub {
+            font-size: 16px;
+            padding: 20px 0 20px;
+        }
+        .service_ld_3_1_0_item__pic {
+            width: 90%;
+        }
+        .service_ld_3_1_0_regist {
+            margin: 10px auto;
+        }
+        .service_ld_3_1_0_regist a {
+            font-size: 16px;
+        }
+        .service_ld_3_1_0_regist i {
+            font-size: 13px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .service_ld_3_1_0_title {
+            font-size: 24px;
+        }
+        .service_ld_3_1_0_title p {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .service_ld_3_1_0_item__sub {
+            font-size: 14px;
+        }
+        .service_ld_3_1_0_item__sub p {
+            padding-top: 15px;
+        }
+    }
+    /*# sourceMappingURL=service_ld_3_1_0.css.map */
+</style>
+
+<body>
+    <section id="" class="service_ld_3_1_0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="service_ld_3_1_0_title">
+                        Niềng răng 3D speed
+                        <p>Khắc phục toàn diện răng <br> Hô - móm - thưa - khấp khểnh</p>
+                    </div>
+                    <div class="service_ld_3_1_0_regist pc">
+                        <a href="">Mô tả tình trạng răng<br>
+                        <i>Chuyên gia 30 năm KN tư vấn miễn phí</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="service_ld_3_1_0_box">
+                        <div class="service_ld_3_1_0_item">
+                            <div class="service_ld_3_1_0_item__sub">
+                                <div class="service_ld_3_1_0_item__pic">
+                                    <img src="images/service_ld_3_1_0-pic1.jpg" alt="">
+                                </div>
+                                <p>Răng hô</p>
+                            </div>
+                            <div class="service_ld_3_1_0_item__sub">
+                                <div class="service_ld_3_1_0_item__pic">
+                                    <img src="images/service_ld_3_1_0-pic3.jpg" alt="">
+                                </div>
+                                <p>Răng thưa</p>
+                            </div>
+                        </div>
+                        <div class="service_ld_3_1_0_item">
+                            <div class="service_ld_3_1_0_item__sub">
+                                <div class="service_ld_3_1_0_item__pic">
+                                    <img src="images/service_ld_3_1_0-pic2.jpg" alt="">
+                                </div>
+                                <p>Răng móm</p>
+                            </div>
+                            <div class="service_ld_3_1_0_item__sub">
+                                <div class="service_ld_3_1_0_item__pic">
+                                    <img src="images/service_ld_3_1_0-pic4.jpg" alt="">
+                                </div>
+                                <p>Răng khấp khểnh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service_ld_3_1_0_regist mb">
+                    <a href="">Mô tả tình trạng răng<br>
+                    <i>Chuyên gia 30 năm KN tư vấn miễn phí</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+</html>

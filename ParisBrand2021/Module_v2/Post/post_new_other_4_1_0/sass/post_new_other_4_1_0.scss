@@ -1,0 +1,50 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+%font1 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.post_new_other_4_1_0{
+    margin: 10px 0;
+    @extend %font1;
+    border: 2px solid #e1908f;
+    border-radius: 5px;
+    .post_other_tt{
+        text-transform: uppercase;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        background-color: #e1908f;
+        color: #fff;
+        svg{
+            width: 35px;
+            height: 35px;
+            background-color:#df6666;
+            fill: #ffff;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+    }
+    a{
+        color: #3e3efe;
+        &:hover{
+            color: #0056a4;
+        }
+    }
+}
+@media #{$r414}{
+    .post_new_other_4_1_0{
+        font-size: 14px;
+        .post_other_tt{
+            font-size: 18px;
+        }
+    }
+}

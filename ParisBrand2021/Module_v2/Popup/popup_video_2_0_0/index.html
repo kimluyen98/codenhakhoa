@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SCI FRAMEWORK</title>
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/popup_video_2_0_0.css" /> -->
+	<script src="../../media/dist/jquery.min.js"></script>
+	<script src="../../media/dist/lib.js"></script>
+	
+</head>
+
+<style>
+	.popup_video_2_0_0 {
+	position: relative;
+	cursor: pointer;
+	background: #000;
+	}
+	.popup_video_2_0_0 img {
+	position: relative;
+	opacity: .4;
+	display: block;
+	transition: 0.3s;
+	width: 100%;
+	}
+	.popup_video_2_0_0::after {
+	content: "";
+	position: absolute;
+	background: url(images/clip-icon.png) center 0 no-repeat;
+	background-size: 100%;
+	width: 50px;
+	height: 50px;
+	display: block;
+	left: calc(50% - 23px);
+	top: calc(50% - 23px);
+	transition: 0.3s;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	opacity: 1;
+	}
+</style>
+
+<body>
+
+	<div class="popup_video_2_0_0 modal-clip" data-video-id="vyW7ZXE7vVw">
+		<img src="images/video-1.jpg" alt="">
+	</div>
+
+</body>
+
+<script>
+	$(".modal-clip").modalVideo({
+	youtube: {
+		controls: 0,
+		nocookie: true
+	}
+	});
+</script>
+
+</html>

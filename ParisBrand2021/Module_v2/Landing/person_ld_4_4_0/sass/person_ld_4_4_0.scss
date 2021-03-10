@@ -1,0 +1,185 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.person_ld_4_4_0 {
+    @extend %font1;
+    background: url(../images/person_ld_4_4_0-bg.jpg) center 0 no-repeat;
+    min-height: 700px;
+    background-size: 100%;
+    padding: 30px 0;
+
+    &_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #0055A4;
+
+        br {
+            display: none;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    &_regist {
+        margin: 485px auto 0;
+        color: #fff;
+        background-color: #ff5159;
+        width: 280px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 12px 0;
+        border-radius: 40px;
+
+        &:hover {
+            box-shadow: 0 0 1px 3px rgba(#ff0f00, 0.8), 0 0 1px 10px rgba(#ff0f00, 0.1), 0 0 1px 20px rgba(#ff0f00, 0.1);
+            border-radius: 40px;
+            transition: 0.4s;
+        }
+
+        i {
+            font-style: normal;
+            font-size: 16px;
+            text-transform: none;
+        }
+
+        a {
+            display: block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 22px;
+            line-height: 1;
+        }
+    }
+}
+
+@media #{$r1440} {
+    .person_ld_4_4_0 {
+        padding: 20px 0;
+        min-height: auto;
+
+        &_title {
+            font-size: 28px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        &_regist {
+            margin: 365px auto 10px;
+        }
+    }
+}
+
+@media #{$r1366} {
+    .person_ld_4_4_0 {
+        &_regist {
+            margin-top: 335px;
+
+        }
+    }
+}
+
+@media #{$r1280} {
+    .person_ld_4_4_0 {
+        &_regist {
+            margin-top: 315px;
+
+        }
+    }
+}
+
+@media #{$r1024} {
+    .person_ld_4_4_0 {
+        &_title {
+            font-size: 20px;
+        }
+
+        &_regist {
+            margin-top: 245px;
+            width: 210px;
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .person_ld_4_4_0 {
+        background-size: 1015px;
+    }
+}
+
+@media #{$r414} {
+    .person_ld_4_4_0 {
+        background-size: 100%;
+        background: url(../images/person_ld_4_4_0-bg-m.jpg) center 0 no-repeat;
+        min-height: 550px;
+
+        &_title {
+            font-size: 22px;
+
+            br {
+                display: block;
+            }
+
+            p {
+                color: #000;
+                font-size: 16px;
+            }
+        }
+
+        &_regist {
+            margin-top: 355px;
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media #{$r375} {
+    .person_ld_4_4_0 {
+        min-height: 500px;
+        background-position-y: -20px;
+
+        &_title {
+            font-size: 19px;
+        }
+    }
+}
+
+@media #{$r320} {
+    .person_ld_4_4_0 {
+        &_title {
+            font-size: 17px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}

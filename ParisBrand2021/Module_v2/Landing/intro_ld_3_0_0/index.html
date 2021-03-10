@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro_ld_3_0_0.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .intro_ld_3_0_0 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .intro_ld_3_0_0 {
+        margin-top: 80px;
+    }
+
+    .intro_ld_3_0_0_bg {
+        position: relative;
+    }
+
+    .intro_ld_3_0_0_bg img {
+        width: 100%;
+        display: block;
+    }
+
+    .intro_ld_3_0_0_box {
+        position: absolute;
+        bottom: 70px;
+        right: 0;
+        left: 0;
+        color: #000;
+    }
+
+    .intro_ld_3_0_0_box .row {
+        margin: 0;
+    }
+
+    .intro_ld_3_0_0_box .row .col-md-6 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .intro_ld_3_0_0_box ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .intro_ld_3_0_0_box ul li {
+        font-size: 24px;
+    }
+
+    .intro_ld_3_0_0_box .form {
+        width: 60%;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    .intro_ld_3_0_0_box .form input {
+        width: 100%;
+        border: none;
+        margin: 5px 0;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background-color: #f0f0f0;
+    }
+
+    .intro_ld_3_0_0_box .form .dkbt {
+        text-align: center;
+        background: #ff5159;
+        padding: 8px 0 5px;
+        margin-bottom: 5px;
+    }
+
+    .intro_ld_3_0_0_box .form .dkbt a {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .intro_ld_3_0_0_box .form .dkbt i {
+        font-style: normal;
+        text-transform: none;
+        font-size: 16px;
+    }
+
+    @media (max-width: 1440px) {
+        .intro_ld_3_0_0_title {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .intro_ld_3_0_0_title img {
+            width: 100%;
+        }
+
+        .intro_ld_3_0_0_box {
+            bottom: 30px;
+        }
+
+        .intro_ld_3_0_0_box ul {
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        .intro_ld_3_0_0_box ul li {
+            font-size: 20px;
+        }
+
+        .intro_ld_3_0_0_box .form {
+            margin: 0 auto;
+        }
+
+        .intro_ld_3_0_0_box .form input {
+            margin: 4px 0;
+            padding: 5px 12px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt {
+            padding: 6px 0 3px;
+            margin-bottom: 3px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt a {
+            font-size: 20px;
+            line-height: 1;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .intro_ld_3_0_0_box {
+            bottom: 10px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt i {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .intro_ld_3_0_0_box ul {
+            margin: 2px auto;
+        }
+
+        .intro_ld_3_0_0_box ul li {
+            font-size: 16px;
+        }
+
+        .intro_ld_3_0_0_box .form {
+            padding: 5px;
+        }
+
+        .intro_ld_3_0_0_box .form input {
+            margin: 2px 0;
+            padding: 4px 12px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt a {
+            font-size: 17px;
+        }
+    }
+
+    @media (max-width: 812px) {
+        .intro_ld_3_0_0_title {
+            width: 80%;
+        }
+
+        .intro_ld_3_0_0_title img {
+            width: 45%;
+        }
+
+        .intro_ld_3_0_0_box {
+            bottom: -90px;
+        }
+
+        .intro_ld_3_0_0_box ul {
+            width: 80%;
+            margin-top: 10px;
+        }
+
+        .intro_ld_3_0_0_box .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .intro_ld_3_0_0_box .form {
+            width: 40%;
+            margin-top: 10px;
+        }
+
+        .intro_ld_3_0_0_box .form input {
+            padding: 3px 12px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt {
+            padding: 3px 0 0px;
+            margin-bottom: 2px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt a {
+            font-size: 15px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt i {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .intro_ld_3_0_0_title {
+            width: 90%;
+        }
+
+        .intro_ld_3_0_0_title img {
+            width: auto;
+        }
+
+        .intro_ld_3_0_0_box {
+            bottom: -80px;
+        }
+
+        .intro_ld_3_0_0_box ul {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        .intro_ld_3_0_0_box .form {
+            width: 80%;
+            padding: 8px;
+            margin-top: 60px;
+        }
+
+        .intro_ld_3_0_0_box .form input {
+            padding: 8px 12px;
+            margin: 4px 0;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt {
+            padding: 10px 0 8px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt a {
+            font-size: 20px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt i {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .intro_ld_3_0_0_title img {
+            width: 70%;
+        }
+
+        .intro_ld_3_0_0_box ul li {
+            font-size: 13px;
+        }
+
+        .intro_ld_3_0_0_box .form .dkbt i {
+            font-size: 14px;
+        }
+    }
+
+    /*# sourceMappingURL=intro_ld_3_0_0.css.map */
+</style>
+
+<body>
+    <section id="" class="intro_ld_3_0_0">
+        <div class="intro_ld_3_0_0_bg">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/intro_ld_3_0_0-bg.jpg">
+                <img src="images/intro_ld_3_0_0-bg-m.jpg" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="intro_ld_3_0_0_box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="intro_ld_3_0_0_title">
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/intro_ld_3_0_0-title.png">
+                                <img src="images/intro_ld_3_0_0-title-m.png" alt="">
+                            </picture>
+                        </div>
+                        <ul>
+                            <li>* Trả góp lãi suất 0% trong 12 tháng</li>
+                            <li>* Tặng răng sứ Titan 3,5 triệu</li>
+                            <li>* Miễn phí PRP cho khách hàng</li>
+                        </ul>
+                        <div class="form">
+                            <article>
+                                <div class="fct">
+                                    <input id="iname" name="iname" type="text" required placeholder="*Họ và tên:...">
+                                    <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                                    <input type="hidden" id="code_campaign" name="code_campaign" value="584128457">
+                                    <input type="hidden" id="name_campaign" name="name_campaign"
+                                        value="[Paris] Cấy ghép Implant 4S">
+                                    <input id="imob" name="imob" type="text" required placeholder="*Số điện thoại:...">
+                                    <input id="iemail" name="iemail" type="email" placeholder="Email:"
+                                        style="display: none;">
+                                    <textarea placeholder="Dịch vụ quan tâm: " rows="1" cols="1" id="itext" name="itext"
+                                        style="display:none"></textarea>
+                                    <div class="dkbt target fbt bmk submit_s">
+                                        <button type="button" onclick="ants_send_contact(this)" value=""> >> Đăng ký
+                                            ngay >><br> <i>Chỉ áp dụng cho 50 suất cho KH đầu tiên</i> </button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

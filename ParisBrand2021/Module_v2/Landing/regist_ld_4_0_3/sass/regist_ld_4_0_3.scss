@@ -1,0 +1,203 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.regist_ld_4_0_3 {
+    @extend %font1;
+    background: url(../images/regist_ld_4_0_3-bg.jpg) center 0 no-repeat;
+    background-size: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+
+    &_box {
+        width: 40%;
+        float: right;
+
+        .form {
+            width: 100%;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin-top: 30px;
+
+            input {
+                width: 100%;
+                border: none;
+                margin: 5px 0;
+                padding: 7px 12px;
+                background-color: #f0f0f0;
+            }
+
+            .dkbt {
+                text-align: center;
+                background: #ff5159;
+                margin-bottom: 5px;
+                margin-top: 10px;
+
+                button {
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 1;
+                    cursor: pointer;
+                    display: block;
+                    padding: 10px 0 5px;
+                    background: none;
+                    border: none;
+                    width: 100%;
+                }
+
+                i {
+                    font-style: normal;
+                    text-transform: none;
+                    font-size: 16px;
+                }
+            }
+
+            h3 {
+                @extend %font1;
+                font-size: 24px;
+                text-align: center;
+                margin: 10px;
+                color: #de5259;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+@media #{$r1440} {
+    .regist_ld_4_0_3 {
+        padding: 50px 0;
+        min-height: auto;
+    }
+}
+
+@media #{$r1280} {
+    .regist_ld_4_0_3 {
+
+        &_title {
+            text-align: center;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        &_box {
+            .form {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media #{$r1024} {
+    .regist_ld_4_0_3 {
+        padding: 20px 0;
+
+        &_box {
+            .form {
+                h3 {
+                    font-size: 18px;
+                }
+
+                .dkbt {
+                    button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .regist_ld_4_0_3 {
+        background: #00388A;
+        padding: 30px 0;
+
+        &_title {
+            img {
+                width: 50%;
+            }
+        }
+
+        &_box {
+            width: 100%;
+
+            .form {
+                margin-top: 20px;
+                background-color: #006DDD;
+                border: none;
+
+                h3 {
+                    font-size: 24px;
+                    color: #fff;
+                }
+
+                input {
+                    padding: 8px 12px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$r414} {
+    .regist_ld_4_0_3 {
+
+        &_title {
+            img {
+                width: 100%;
+            }
+        }
+
+        &_box {
+            .form {
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$r360} {
+    .regist_ld_4_0_3 {
+        &_box {
+            .form {
+                h3 {
+                    font-size: 15px;
+                }
+
+                .dkbt {
+                    button {
+                        font-size: 17px;
+                    }
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

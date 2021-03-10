@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/doctor_ld_3_0_0.css" />
+    <script src="../../media/dist/lib.min.js"></script>
+	<script src="../../media/dist/tiny.slider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .doctor_ld_3_0_0 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .doctor_ld_3_0_0 {
+        background: url(images/doctor_ld_3_0_0-bg.jpg) center 0 no-repeat;
+        min-height: 700px;
+        padding: 30px 0;
+    }
+    
+    .doctor_ld_3_0_0 .modal-box {
+        position: relative;
+        width: 50%;
+        max-width: 560px;
+        margin: 100px auto;
+    }
+    
+    @media (max-width: 414px) {
+        .doctor_ld_3_0_0 .modal-box {
+            width: 90%;
+        }
+    }
+    
+    .doctor_ld_3_0_0 .modal-header {
+        padding: 10px 20px;
+        background: #0038c8 !important;
+        border-radius: 4px 4px 0 0;
+        border-bottom: 1px solid #e9ecef !important;
+    }
+    
+    .doctor_ld_3_0_0 .modal-boddy {
+        color: #000;
+        font-size: 16px;
+        min-height: auto !important;
+    }
+    
+    .doctor_ld_3_0_0 .modal-title {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .doctor_ld_3_0_0 .modal-close {
+        color: #fff;
+        margin-top: -30px;
+    }
+    
+    .doctor_ld_3_0_0_title {
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #0055a4;
+    }
+    
+    .doctor_ld_3_0_0_title br {
+        display: none;
+    }
+    
+    .doctor_ld_3_0_0_box .row {
+        margin: 0;
+    }
+    
+    .doctor_ld_3_0_0_box .row .col-md-5,
+    .doctor_ld_3_0_0_box .row .col-md-7 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .doctor_ld_3_0_0_box .row .col-md-5 img,
+    .doctor_ld_3_0_0_box .row .col-md-7 img {
+        width: 100%;
+    }
+    
+    .doctor_ld_3_0_0_box_tieude {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #000;
+        padding: 20px 0;
+    }
+    
+    .doctor_ld_3_0_0_item {
+        position: relative;
+        margin-bottom: 10px;
+        transition: 0.3s;
+    }
+    
+    .doctor_ld_3_0_0_item:hover .doctor_ld_3_0_0_item__bottom {
+        background-color: #31aaf6;
+        transition: 0.3s;
+    }
+    
+    .doctor_ld_3_0_0_item__top {
+        background-color: #e8f4ff;
+        height: 70px;
+    }
+    
+    .doctor_ld_3_0_0_item__bottom {
+        background-color: #b9e0ff;
+        padding-top: 70px;
+        text-align: center;
+        padding-bottom: 10px;
+        color: #000;
+        font-size: 16px;
+    }
+    
+    .doctor_ld_3_0_0_item__name span {
+        text-transform: uppercase;
+    }
+    
+    .doctor_ld_3_0_0_item__pic {
+        width: 70%;
+        position: absolute;
+        top: 20px;
+        left: 25px;
+    }
+    
+    .doctor_ld_3_0_0_item__pic img {
+        border-radius: 100%;
+    }
+    
+    .doctor_ld_3_0_0_regist {
+        background-color: #ff5159;
+        color: #fff;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 40px;
+        padding: 6px 0;
+        line-height: 1.1;
+        margin-top: 20px;
+    }
+    
+    .doctor_ld_3_0_0_regist a {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+    }
+    
+    .doctor_ld_3_0_0_regist i {
+        font-style: normal;
+    }
+    
+    @media (max-width: 1024px) {
+        .doctor_ld_3_0_0 {
+            min-height: 490px;
+        }
+        .doctor_ld_3_0_0_title {
+            font-size: 30px;
+        }
+        .doctor_ld_3_0_0_box_tieude {
+            font-size: 18px;
+        }
+        .doctor_ld_3_0_0_item__bottom {
+            padding-top: 50px;
+            font-size: 13px;
+        }
+        .doctor_ld_3_0_0_regist {
+            font-size: 13px;
+            width: 45%;
+            margin-top: 10px;
+        }
+        .doctor_ld_3_0_0_regist a {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .doctor_ld_3_0_0_title {
+            font-size: 24px;
+        }
+        .doctor_ld_3_0_0_item__top {
+            height: 50px;
+        }
+        .doctor_ld_3_0_0_item__pic {
+            top: 13px;
+            left: 15px;
+        }
+        .doctor_ld_3_0_0_item__bottom {
+            padding-top: 40px;
+            font-size: 11px;
+        }
+        .doctor_ld_3_0_0_regist {
+            font-size: 12px;
+            width: 50%;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .doctor_ld_3_0_0_title {
+            text-align: center;
+        }
+        .doctor_ld_3_0_0_title br {
+            display: block;
+        }
+        .doctor_ld_3_0_0_box_tieude {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+        .doctor_ld_3_0_0_item__top {
+            height: 70px;
+        }
+        .doctor_ld_3_0_0_item__pic {
+            top: 15px;
+            left: 25px;
+        }
+        .doctor_ld_3_0_0_item__bottom {
+            padding-top: 80px;
+            font-size: 15px;
+        }
+        .doctor_ld_3_0_0_regist {
+            width: 65%;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .doctor_ld_3_0_0_title {
+            font-size: 20px;
+        }
+        .doctor_ld_3_0_0_item__bottom {
+            padding-top: 65px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .doctor_ld_3_0_0_title {
+            font-size: 18px;
+        }
+        .doctor_ld_3_0_0_box_tieude {
+            font-size: 14px;
+        }
+        .doctor_ld_3_0_0_item__pic {
+            left: 20px;
+        }
+        .doctor_ld_3_0_0_item__bottom {
+            padding-top: 45px;
+            font-size: 14px;
+        }
+        .doctor_ld_3_0_0_regist {
+            width: 80%;
+        }
+    }
+    /*# sourceMappingURL=doctor_ld_3_0_0.css.map */
+</style>
+
+<body>
+    <section id="" class="doctor_ld_3_0_0">
+        <div class="container">
+            <div class="doctor_ld_3_0_0_title">Trồng răng implant chuẩn pháp<br> cùng đội ngũ chuyên gia</div>
+            <div class="doctor_ld_3_0_0_box">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="doctor_ld_3_0_0_box_tieude">Cố vấn chuyên môn</div>
+                        <div class="doctor_ld_3_0_0_image">
+                            <img src="images/doctor_ld_3_0_0-pic.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="doctor_ld_3_0_0_box_tieude">Đội ngũ bác sĩ 30 năm kinh nghiệm</div>
+                        <div class="doctor_ld_3_0_0_box_right">
+                            <div class="doctor_ld_3_0_0_right1">
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-tram">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-tram.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Tiến sĩ - Bác sĩ <br> <span>Đàm Ngọc Trâm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-lam">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-lam.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Hoàng Thế Lâm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doctor_ld_3_0_0_right1">
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-hiep">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-hiep.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Trần Minh Hiệp</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-hoai">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-hoai.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Phan Tiến Hoài</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doctor_ld_3_0_0_right1">
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-thanh">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-thanh.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Mai Thế Thanh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-tuan">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-tuan.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Phan Văn Tuấn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doctor_ld_3_0_0_right1">
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-anh-tuan">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-anh-tuan.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Hồ Hiệp Anh Tuấn</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="doctor_ld_3_0_0_item modal-btn" data-modal="modal-nhat-anh">
+                                    <div class="doctor_ld_3_0_0_item__top"></div>
+                                    <div class="doctor_ld_3_0_0_item__bottom">
+                                        <div class="doctor_ld_3_0_0_item__pic">
+                                            <img src="images/dt-nhat-anh.jpg" alt="">
+                                        </div>
+                                        <div class="doctor_ld_3_0_0_item__name">
+                                            Bác sĩ <br> <span>Hồ Nhật Anh</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor_ld_3_0_0_regist">
+                            <a href="">Đăng ký tứ vấn >></a>
+                            <i>Trò chuyện cùng chuyên gia để hiểu rõ <br>hơn về tình trạng răng miệng</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-tram" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-pop">
+                        <div class="modal-header">
+                            <div class="modal-title"> TS.BS ĐÀM NGỌC TRÂM</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Giám đốc hệ thống chuỗi nha khoa Paris
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-hiep" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Trần Minh Hiệp</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ tại chi nhánh Quang Trung - Hà Nội<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-thanh" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Mai Thế Thanh</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ tại chi nhánh Hải Phòng<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-anh-tuan" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Hồ Hiệp Anh Tuấn</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ tại chi nhánh Cộng Hòa - TP HCM<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-lam" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Hoàng Thế Lâm</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ tại chi nhánh Cộng Hòa - TP HCM<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-hoai" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Phan Tiến Hoài</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ chi nhánh Đà Nẵng<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-tuan" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Phan Văn Tuấn</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ chi nhánh Vinh - Nghệ An<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="modal-nhat-anh" style="display:none;">
+                    <div class="modal-bg"></div>
+                    <div class="modal-box animate-opacity">
+                        <div class="modal-header">
+                            <div class="modal-title"> Bs Hồ Nhật Anh</div>
+                            <div class="modal-close">×</div>
+                        </div>
+                        <div class="modal-body">
+                            <span>
+                                - Bác sĩ chi nhánh Nguyễn Thái Học - TP HCM<br>
+                                - Chuyên gia phục hình Implant
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // doctor_ld_3_0_0
+    var doctor_ld_3_0_0_box_right = tns({
+        container: '.doctor_ld_3_0_0_box_right',
+        items: 4,
+        slideBy: 'page',
+        autoplay: false,
+        autoplayButtonOutput: false,
+        lazyload: true,
+        nav: false,
+        mouseDrag: false,
+        loop: false,
+        gutter: 10,
+        nav: false,
+        controls: false,
+        navPosition: 'bottom',
+        lazyloadSelector: '.tns-lazy',
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+            },
+            768: {
+                items: 4,
+            },
+        },
+    });
+
+    // modal
+    // $(".modal-btn").click(function(e) {
+    //     e.preventDefault();
+    //     dataModal = $(this).attr("data-modal");
+    //     $("#" + dataModal).css({
+    //         "display": "block"
+    //     });
+        // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+    // });
+
+    // $(".modal-close, .modal-bg").click(function() {
+    //     $(".modal").css({
+    //         "display": "none"
+    //     });
+        // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+    // });
+    // end  doctor_ld_3_0_0
+</script>
+
+</html>

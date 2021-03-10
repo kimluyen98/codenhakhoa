@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro_ld_4_4_0.css" />
+    <script src="../../media/dist/lib.min.js"></script>
+	<script src="../../media/dist/tiny.slider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .intro_ld_4_4_0 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .intro_ld_4_4_0 {
+        margin-top: 80px;
+    }
+    
+    .intro_ld_4_4_0_bg {
+        position: relative;
+    }
+    
+    .intro_ld_4_4_0_bg img {
+        width: 100%;
+        display: block;
+    }
+    
+    .intro_ld_4_4_0_box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -90px;
+    }
+    
+    .intro_ld_4_4_0_regist {
+        color: #fff;
+        background-color: #ff5159;
+        width: 250px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 7px 0;
+        margin: 15px 0;
+    }
+    
+    .intro_ld_4_4_0_regist:hover {
+        box-shadow: 0 0 1px 3px rgba(255, 15, 0, 0.8), 0 0 1px 10px rgba(255, 15, 0, 0.1), 0 0 1px 20px rgba(255, 15, 0, 0.1);
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+    
+    .intro_ld_4_4_0_regist i {
+        font-style: normal;
+        font-size: 16px;
+        text-transform: none;
+    }
+    
+    .intro_ld_4_4_0_regist a {
+        display: block;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    .intro_ld_4_4_0_box1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .intro_ld_4_4_0_box1 img {
+        width: 100%;
+        display: block;
+    }
+    
+    .intro_ld_4_4_0_item {
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #eee;
+    }
+    
+    .intro_ld_4_4_0_item:hover {
+        transition: 0.3s;
+    }
+    
+    .intro_ld_4_4_0_item:hover .intro_ld_4_4_0_item__sub {
+        background-color: #0061cf;
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    .intro_ld_4_4_0_item__sub {
+        padding: 15px 0;
+    }
+    
+    @media (max-width: 1440px) {
+        .intro_ld_4_4_0_top {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .intro_ld_4_4_0_title {
+            width: 50%;
+        }
+        .intro_ld_4_4_0_title img {
+            width: 70%;
+            display: block;
+        }
+        .intro_ld_4_4_0_regist {
+            font-size: 15px;
+        }
+        .intro_ld_4_4_0_regist a {
+            font-size: 20px;
+        }
+        .intro_ld_4_4_0_box1 {
+            width: 70%;
+        }
+    }
+    
+    @media (max-width: 1280px) {
+        .intro_ld_4_4_0_box {
+            bottom: -140px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .intro_ld_4_4_0_item {
+            font-size: 15px;
+        }
+        .intro_ld_4_4_0_item__sub {
+            padding: 10px 0;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .intro_ld_4_4_0_title img {
+            width: 80%;
+        }
+        .intro_ld_4_4_0_item {
+            font-size: 13px;
+        }
+        .intro_ld_4_4_0_box {
+            bottom: -120px;
+        }
+        .intro_ld_4_4_0_regist {
+            width: 200px;
+            padding: 5px 0;
+            margin: 5px 0;
+        }
+        .intro_ld_4_4_0_regist a {
+            font-size: 18px;
+        }
+        .intro_ld_4_4_0_regist i {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .intro_ld_4_4_0_top {
+            width: 85%;
+        }
+        .intro_ld_4_4_0_title {
+            width: 80%;
+        }
+        .intro_ld_4_4_0_title img {
+            width: 100%;
+        }
+        .intro_ld_4_4_0_box {
+            bottom: -110px;
+        }
+        .intro_ld_4_4_0_regist {
+            margin: 10px auto;
+            border-radius: 20px;
+        }
+        .intro_ld_4_4_0_box1 {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .intro_ld_4_4_0_item__sub {
+            height: 70px;
+        }
+        .intro_ld_4_4_0_item__sub br {
+            display: none;
+        }
+    }
+    /*# sourceMappingURL=intro_ld_4_4_0.css.map */
+</style>
+
+<body>
+    <section id="" class="intro_ld_4_4_0">
+        <div class="intro_ld_4_4_0_bg">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/intro_ld_4_4_0-bg.jpg">
+                <img src="images/intro_ld_4_4_0-bg-m.jpg" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="intro_ld_4_4_0_box">
+                <div class="intro_ld_4_4_0_top">
+                    <div class="intro_ld_4_4_0_title">
+                        <img src="images/intro_ld_4_4_0-title.png" alt="">
+                    </div>
+                    <div class="intro_ld_4_4_0_regist">
+                        <a href="">>> Đăng ký ngay >></a>
+                        <i>OFF 25% duy nhất tháng 5</i>
+                    </div>
+                </div>
+                <div class="intro_ld_4_4_0_box1">
+                    <div>
+                        <div class="intro_ld_4_4_0_item">
+                            <div class="intro_ld_4_4_0_item__pic">
+                                <img src="images/intro_ld_4_4_0-pic1.jpg" alt="">
+                            </div>
+                            <div class="intro_ld_4_4_0_item__sub">
+                                Phác đồ 3 bước, biết trước<br> kết quả sau 7 ngày
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="intro_ld_4_4_0_item">
+                            <div class="intro_ld_4_4_0_item__pic">
+                                <img src="images/intro_ld_4_4_0-pic2.jpg" alt="">
+                            </div>
+                            <div class="intro_ld_4_4_0_item__sub">
+                                Điều trị 3 giai đoạn<br> Rút ngắn 6 tháng niềng răng
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="intro_ld_4_4_0_item">
+                            <div class="intro_ld_4_4_0_item__pic">
+                                <img src="images/intro_ld_4_4_0-pic3.jpg" alt="">
+                            </div>
+                            <div class="intro_ld_4_4_0_item__sub">
+                                100% mắc cài & khay trong<br> nhập khẩu chính hãng
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // intro_ld_4_4_0
+    // $('.intro_ld_4_4_0_box1.owl-carousel').owlCarousel({
+    //     margin: 20,
+    //     items: 4,
+    //     mouseDrag: false,
+    //     dots: false,
+    //     responsive: {
+    //         0: {
+    //             items: 2,
+    //         },
+    //         414: {
+    //             items: 2,
+    //             margin: 10,
+    //         },
+    //         768: {
+    //             items: 3,
+    //         },
+
+    //     }
+    // });
+
+    var intro_ld_4_4_0_box1 = tns({
+        container: '.intro_ld_4_4_0_box1',
+        items: 4,
+        slideBy: 'page',
+        autoplay: false,
+        autoplayButtonOutput: false,
+        lazyload: true,
+        nav: false,
+        mouseDrag: false,
+        gutter: 10,
+        nav: false,
+        controls: false,
+        navPosition: 'bottom',
+        lazyloadSelector: '.tns-lazy',
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+            },
+            768: {
+                items: 3,
+            },
+        },
+    });
+    // end  intro_ld_4_4_0
+</script>
+
+</html>

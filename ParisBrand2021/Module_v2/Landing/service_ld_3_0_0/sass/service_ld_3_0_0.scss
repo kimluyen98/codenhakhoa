@@ -1,0 +1,278 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.service_ld_3_0_0 {
+    @extend %font1;
+    background: url(../images/service_ld_3_0_0-bg.jpg) center 0 no-repeat;
+    min-height: 700px;
+    padding: 40px 0;
+    &_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #0055a4;
+        p {
+            font-size: 24px;
+            color: #000;
+        }
+    }
+    &_box {
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_left {
+            width: 49%;
+        }
+        &_right {
+            width: 49%;
+            .service_ld_3_0_0_box__item {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                &:nth-child(1) {
+                    margin-bottom: 20px;
+                }
+                .pic {
+                    width: 40%;
+                    img {
+                        width: auto;
+                    }
+                }
+                .sub {
+                    width: 60%;
+                    flex: 1;
+                }
+            }
+        }
+        &__item {
+            background-color: #fff;
+            color: #000;
+            transition: 0.3s;
+            &:hover {
+                background-color: #c8f4ff;
+                transition: 0.3s;
+            }
+            .pic {
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .sub {
+                padding: 34px 30px;
+                font-size: 16px;
+                p {
+                    font-size: 24px;
+                    color: #2971c5;
+                }
+            }
+        }
+    }
+    &_regist {
+        background-color: #ff5159;
+        color: #fff;
+        padding: 5px 0 0px;
+        border-radius: 40px;
+        text-align: center;
+        width: 25%;
+        margin: 0 auto;
+        a {
+            display: block;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        i {
+            font-style: normal;
+        }
+    }
+}
+
+@media #{$r1440} {
+    .service_ld_3_0_0 {
+        &_box {
+            &_right {
+                .service_ld_3_0_0_box__item {
+                    .pic {
+                        width: 45%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &__item {
+                .sub {
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$r1024} {
+    .service_ld_3_0_0 {
+        padding-bottom: 20px;
+        min-height: 680px;
+        &_title {
+            font-size: 30px;
+            p {
+                font-size: 20px;
+            }
+        }
+        &_box {
+            &_right {
+                .service_ld_3_0_0_box__item {
+                    .pic {
+                        width: 45%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            &__item {
+                .sub {
+                    font-size: 14px;
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &_regist {
+            font-size: 13px;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .service_ld_3_0_0 {
+        min-height: 600px;
+        &_box {
+            &__item {
+                .sub {
+                    padding: 10px;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &_regist {
+            width: 33%;
+        }
+    }
+}
+
+@media #{$r414} {
+    .service_ld_3_0_0 {
+        background: url(../images/service_ld_3_0_0-bg-m.jpg) center 0 no-repeat;
+        padding: 10px 0;
+        &_title {
+            font-size: 23px;
+            p {
+                font-size: 16px;
+            }
+        }
+        &_box {
+            display: block;
+            padding: 10px 0 0;
+            &_left {
+                width: 100%;
+            }
+            &_right {
+                width: 100%;
+                .service_ld_3_0_0_box__item {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                    .pic {
+                        width: 100%;
+                    }
+                    .sub {
+                        width: 100%;
+                        order: 2;
+                    }
+                }
+            }
+            &__item {
+                background: none;
+                margin-bottom: 10px;
+                .sub {
+                    p {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        &_regist {
+            width: 55%;
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media #{$r375} {
+    .service_ld_3_0_0 {
+        &_title {
+            font-size: 18px;
+            padding-top: 10px;
+            p {
+                font-size: 13px;
+            }
+        }
+        &_box {
+            padding: 0;
+            &__item {
+                .sub {
+                    font-size: 13px;
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        &_regist {
+            width: 63%;
+        }
+    }
+}
+
+@media #{$r320} {
+    .service_ld_3_0_0 {
+        &_regist {
+            a {
+                font-size: 14px;
+            }
+            i {
+                font-size: 11px;
+            }
+        }
+    }
+}

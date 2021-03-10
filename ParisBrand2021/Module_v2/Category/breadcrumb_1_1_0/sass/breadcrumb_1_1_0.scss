@@ -1,0 +1,30 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+.breadcrumb_1_1_0 {
+    width: 100%;
+    height: auto;
+    padding: 10px 0 10px 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    p{
+        margin: 0;
+    }
+    span{
+        color: #333;
+    }
+    a{
+        color: #333;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+}

@@ -1,0 +1,64 @@
+<script type="application/ld+json">
+		{
+		"@context": "http://schema.org",
+		"@type": "<?php if ( is_home() ){ echo'NewsArticle';}else{if(in_category(134)){echo'Question';}else {echo'NewsArticle';}} ?>",
+		"headline":"<?php if ( is_home() ){ echo wp_title();}else{echo get_post_meta(get_the_ID(), '_yoast_wpseo_title', true);}?>",
+		   "keywords": "<?php if ( is_home() ){ echo 'nha khoa, nha khoa uy tin , nha khoa uy tín, nha khoa thẩm mỹ';}else{echo get_post_meta(get_the_ID(), '_yoast_wpseo_metakeywords', true);}?>",
+		   "description":"<?php if ( is_home() ){ echo 'Nha khoa Paris chuyên thẩm mỹ, phục hình răng toàn diện, áp dụng CN hiện đại, tiên tiến bậc nhất cho bạn một nụ cười mới, một cuộc sống mới.';}else{ echo get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true);}?>",
+		   "datePublished": "<?php echo get_the_date(); ?>",
+		   "dateModified": "<?php the_modified_date('F j, Y'); ?>",
+		   "dateCreated": "<?php echo get_the_date(); ?>",
+		  <?php $a1=get_field('csdl') ; if ( is_home() ) {echo'"mainEntityOfPage":"Là nơi ứng dụng các công nghệ nha khoa không đau theo tiêu chuẩn Pháp và một số nước phát triển ở Châu Âu, Nha khoa Paris mong muốn được mang đến nụ cười rạng rỡ cho tất cả khách hàng trên toàn quốc.  Thay đổi nụ cười, thay đổi cuộc sống, nha khoa Paris luôn tự hào là người bạn đồng hành tin cậy nhất cho quá trình chăm sóc răng miệng và thẩm mỹ nụ cười. ",';}else{ if(empty($a1)) {echo'';}  else { echo' "mainEntityOfPage": "'.get_field('csdl').'",'; }}?>
+		  
+		   "image":{
+		   "@type":"ImageObject",
+		   "url":"<?php if ( has_post_thumbnail() ) {$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail');} $img = ($large_image_url[0]!='')?$large_image_url[0]:''; echo $img;  ?>",
+		   "height": 150,
+		   "width":<?php   if ( is_home() ) {echo'696';} else {if(in_category(1)){echo'270';}else {echo'696';}} ?>},
+		   <?php 
+		   if ( is_home() ){  echo'    
+			"author":{
+			"@type": "Person",
+			"name": "Nha Khoa Paris"
+		   },';}else{
+		   
+		   if(in_category(134)){
+			   
+			   echo'
+				
+			"author": {
+			"@type": "Person",
+			"name": "'.get_field('tnh').'"
+			},
+		   "acceptedAnswer": {
+				"@type": "Answer",
+				"text": "'.get_field('ctl').'",
+				"dateCreated": "'.get_the_date().'",
+				"author": {
+					"@type": "Person",
+					"name": "Bác sĩ Paris tư vấn"
+				}  
+			},';
+			   
+			 }else {  echo'   
+			"author":{
+				  "@type": "Person",
+				  "name": "Nha Khoa Paris"
+		   },';}} ?>
+
+		   "publisher":{
+				"@type":"Organization",
+				"name":"Nha Khoa Paris",
+				"telephone" : "+8419006900",
+				"url" : "<?php echo get_site_url(); ?>",
+			"logo":{
+				"@type":"ImageObject",
+				"url":"https://nhakhoaparis.vn/wp-content/themes/dichvu/media/images/logo.png",
+				"width":180,
+				"height":51},
+			"address":{ 
+			  "@type": "PostalAddress",
+			  "addressLocality": "Hà Nội, Việt Nam",
+			  "streetAddress": "39 Quang Trung"}}
+		  }   
+		</script>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/intro_ld_4_0_0.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .intro_ld_4_0_0 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .intro_ld_4_0_0 {
+        margin-top: 80px;
+    }
+    
+    .intro_ld_4_0_0 .mb {
+        display: none;
+    }
+    
+    .intro_ld_4_0_0_bg {
+        position: relative;
+    }
+    
+    .intro_ld_4_0_0_bg img {
+        width: 100%;
+        display: block;
+    }
+    
+    .intro_ld_4_0_0_box {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        left: 0;
+        color: #000;
+    }
+    
+    .intro_ld_4_0_0_box1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .intro_ld_4_0_0_box1 .form {
+        text-align: center;
+        width: 28%;
+        background: #fff;
+        padding: 7px;
+        border: 1px solid #ccc;
+    }
+    
+    .intro_ld_4_0_0_box1 .form p {
+        color: #ff5159;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    
+    .intro_ld_4_0_0_box1 .form input {
+        width: 100%;
+        border: none;
+        background-color: #f0f0f0;
+        margin: 4px 0;
+        padding: 6px 12px;
+    }
+    
+    .intro_ld_4_0_0_box1 .form .dkbt {
+        background-color: #ff5159;
+        padding: 12px 25px;
+        margin-top: 5px;
+    }
+    
+    .intro_ld_4_0_0_box1 .form .dkbt a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    
+    .intro_ld_4_0_0_box2 {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+    
+    .intro_ld_4_0_0_box2__item {
+        background-color: #fff;
+        color: #000;
+        width: 23%;
+        padding: 30px 10px;
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.3s;
+        box-shadow: 0 8px 6px -6px #eee;
+    }
+    
+    .intro_ld_4_0_0_box2__item:hover {
+        background-color: #c8f4ff;
+        transition: 0.3s;
+    }
+    
+    .intro_ld_4_0_0_box2__item .pic {
+        position: relative;
+    }
+    
+    .intro_ld_4_0_0_box2__item .pic::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-bottom: 5px solid #0055a4;
+        bottom: -10px;
+        left: 40%;
+        width: 50px;
+    }
+    
+    .intro_ld_4_0_0_box2__item .text {
+        padding-top: 20px;
+    }
+    
+    @media (max-width: 1440px) {
+        .intro_ld_4_0_0_title img {
+            width: 80%;
+        }
+        .intro_ld_4_0_0_box1 {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .intro_ld_4_0_0_box1 .form {
+            width: 30%;
+        }
+        .intro_ld_4_0_0_box1 .form p {
+            font-size: 20px;
+        }
+        .intro_ld_4_0_0_box2 {
+            width: 80%;
+            margin: 30px auto 0;
+        }
+        .intro_ld_4_0_0_box2__item {
+            padding: 20px 10px;
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .intro_ld_4_0_0_title img {
+            width: 60%;
+        }
+        .intro_ld_4_0_0_box1 .form p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .intro_ld_4_0_0_box1 .form input {
+            margin: 3px 0;
+            padding: 6px 12px;
+        }
+        .intro_ld_4_0_0_box1 .form .dkbt {
+            padding: 8px 25px;
+            margin-top: 5px;
+        }
+        .intro_ld_4_0_0_box1 .form .dkbt a {
+            font-size: 16px;
+        }
+        .intro_ld_4_0_0_box2 {
+            margin-top: 20px;
+        }
+        .intro_ld_4_0_0_box2__item {
+            font-size: 16px;
+            padding: 20px 10px 10px;
+        }
+        .intro_ld_4_0_0_box2__item .pic {
+            width: 30%;
+            margin: 0 auto;
+        }
+        .intro_ld_4_0_0_box2__item .pic img {
+            width: 100%;
+        }
+        .intro_ld_4_0_0_box2__item .pic::after {
+            left: 0;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .intro_ld_4_0_0_box {
+            bottom: -70px;
+        }
+        .intro_ld_4_0_0_box1 .form {
+            width: 35%;
+        }
+        .intro_ld_4_0_0_box2__item {
+            font-size: 14px;
+            padding: 15px 10px 10px;
+        }
+        .intro_ld_4_0_0_box2__item .pic::after {
+            border-bottom: 3px solid #0055a4;
+            bottom: -5px;
+            width: 35px;
+        }
+        .intro_ld_4_0_0_box2__item .text {
+            padding-top: 10px;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .intro_ld_4_0_0 .mb {
+            display: block;
+        }
+        .intro_ld_4_0_0 .pc {
+            display: none;
+        }
+        .intro_ld_4_0_0_title {
+            width: 60%;
+        }
+        .intro_ld_4_0_0_title img {
+            width: 100%;
+        }
+        .intro_ld_4_0_0_box {
+            bottom: -100px;
+        }
+        .intro_ld_4_0_0_box1 {
+            display: block;
+            width: 90%;
+        }
+        .intro_ld_4_0_0_box1 .form {
+            width: 100%;
+        }
+        .intro_ld_4_0_0_box1 .form p {
+            font-size: 20px;
+        }
+        .intro_ld_4_0_0_box1 .form .dkbt {
+            padding: 15px 25px;
+            margin-top: 7px;
+        }
+        .intro_ld_4_0_0_box1 .form .dkbt a {
+            font-size: 18px;
+        }
+        .intro_ld_4_0_0_box2 {
+            width: 100%;
+        }
+        .intro_ld_4_0_0_box2__item {
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 13px;
+            padding: 10px 5px;
+        }
+        .intro_ld_4_0_0_box2__item .pic::after {
+            display: none;
+        }
+        .intro_ld_4_0_0_box2__item .text {
+            flex: 1;
+            padding-left: 10px;
+            padding-top: 0;
+        }
+        .intro_ld_4_0_0_box2__item .text br {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .intro_ld_4_0_0_box1 .form p {
+            font-size: 18px;
+        }
+        .intro_ld_4_0_0_box1 .form .dkbt {
+            padding: 10px 25px;
+        }
+        .intro_ld_4_0_0_box2 {
+            margin-top: 10px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .intro_ld_4_0_0_box2__item {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .intro_ld_4_0_0_box2__item .text {
+            padding-left: 3px;
+        }
+        .intro_ld_4_0_0_box1 .form p {
+            font-size: 16px;
+        }
+    }
+    /*# sourceMappingURL=intro_ld_4_0_0.css.map */
+</style>
+
+<body>
+    <section id="" class="intro_ld_4_0_0">
+        <div class="intro_ld_4_0_0_bg">
+            <picture>
+                <source media="(min-width:600px)" srcset="images/intro_ld_4_0_0-bg.jpg">
+                <img src="images/intro_ld_4_0_0-bg-m.jpg" alt="">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="intro_ld_4_0_0_box">
+                <div class="intro_ld_4_0_0_box1">
+                    <div class="intro_ld_4_0_0_title">
+                        <picture>
+                            <source media="(min-width:600px)" srcset="images/intro_ld_4_0_0-title.png">
+                            <img src="images/intro_ld_4_0_0-title.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="mb">
+                        <div class="intro_ld_4_0_0_box2">
+                            <div class="intro_ld_4_0_0_box2__item">
+                                <div class="pic">
+                                    <img src="images/intro_ld_4_0_0-icon1.png" alt="">
+                                </div>
+                                <div class="text">Ăn nhai như<br> răng thật</div>
+                            </div>
+                            <div class="intro_ld_4_0_0_box2__item">
+                                <div class="pic">
+                                    <img src="images/intro_ld_4_0_0-icon2.png" alt="">
+                                </div>
+                                <div class="text">Bền chắc lên tới<br> 25 năm</div>
+                            </div>
+                            <div class="intro_ld_4_0_0_box2__item">
+                                <div class="pic">
+                                    <img src="images/intro_ld_4_0_0-icon3.png" alt="">
+                                </div>
+                                <div class="text">An toàn, không tiêu<br> xương hàm</div>
+                            </div>
+                            <div class="intro_ld_4_0_0_box2__item">
+                                <div class="pic">
+                                    <img src="images/intro_ld_4_0_0-icon4.png" alt="">
+                                </div>
+                                <div class="text">Bảo hành trọn đời</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <article>
+                            <p>Đội ngũ chuyên gia<br> implant giàu kinh nghiệm</p>
+                            <div class="fct">
+                                <input id="iname" name="iname" type="text" required placeholder="*Họ và tên:...">
+                                <input type="hidden" id="gclid_field" name="gclid_field" value="">
+                                <input type="hidden" id="code_campaign" name="code_campaign" value="584128457">
+                                <input type="hidden" id="name_campaign" name="name_campaign" value="[Paris] Cấy ghép Implant 4S">
+                                <input id="imob" name="imob" type="text" required placeholder="*Số điện thoại:...">
+                                <input id="iemail" name="iemail" type="email" placeholder="Email:" style="display: none;">
+                                <textarea placeholder="Dịch vụ quan tâm: " rows="1" cols="1" id="itext" name="itext" style="display:none"></textarea>
+                                <div class="dkbt target fbt bmk submit_s" >
+                                    <button type="button" onclick="ants_send_contact(this)" value=""> >> Đăng ký ngay >></button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="intro_ld_4_0_0_box2 pc">
+                    <div class="intro_ld_4_0_0_box2__item">
+                        <div class="pic">
+                            <img src="images/intro_ld_4_0_0-icon1.png" alt="">
+                        </div>
+                        <div class="text">Ăn nhai như<br> răng thật</div>
+                    </div>
+                    <div class="intro_ld_4_0_0_box2__item">
+                        <div class="pic">
+                            <img src="images/intro_ld_4_0_0-icon2.png" alt="">
+                        </div>
+                        <div class="text">Bền chắc lên tới<br> 25 năm</div>
+                    </div>
+                    <div class="intro_ld_4_0_0_box2__item">
+                        <div class="pic">
+                            <img src="images/intro_ld_4_0_0-icon3.png" alt="">
+                        </div>
+                        <div class="text">An toàn, không tiêu<br> xương hàm</div>
+                    </div>
+                    <div class="intro_ld_4_0_0_box2__item">
+                        <div class="pic">
+                            <img src="images/intro_ld_4_0_0-icon4.png" alt="">
+                        </div>
+                        <div class="text">Bảo hành trọn đời</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

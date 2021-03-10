@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCI FRAMEWORK</title>
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/service_ld_3_0_0.css" />
+    <script src="../../media/dist/jquery.min.js"></script>
+    <script src="../../media/dist/lib.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+    
+    .service_ld_3_0_0 {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .service_ld_3_0_0 {
+        background: url(images/service_ld_3_0_0-bg.jpg) center 0 no-repeat;
+        min-height: 700px;
+        padding: 40px 0;
+    }
+    
+    .service_ld_3_0_0_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #0055a4;
+    }
+    
+    .service_ld_3_0_0_title p {
+        font-size: 24px;
+        color: #000;
+    }
+    
+    .service_ld_3_0_0_box {
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .service_ld_3_0_0_box_left {
+        width: 49%;
+    }
+    
+    .service_ld_3_0_0_box_right {
+        width: 49%;
+    }
+    
+    .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    
+    .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic {
+        width: 40%;
+    }
+    
+    .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic img {
+        width: auto;
+    }
+    
+    .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .sub {
+        width: 60%;
+        flex: 1;
+    }
+    
+    .service_ld_3_0_0_box__item {
+        background-color: #fff;
+        color: #000;
+        transition: 0.3s;
+    }
+    
+    .service_ld_3_0_0_box__item:hover {
+        background-color: #c8f4ff;
+        transition: 0.3s;
+    }
+    
+    .service_ld_3_0_0_box__item .pic img {
+        width: 100%;
+        display: block;
+    }
+    
+    .service_ld_3_0_0_box__item .sub {
+        padding: 34px 30px;
+        font-size: 16px;
+    }
+    
+    .service_ld_3_0_0_box__item .sub p {
+        font-size: 24px;
+        color: #2971c5;
+    }
+    
+    .service_ld_3_0_0_regist {
+        background-color: #ff5159;
+        color: #fff;
+        padding: 5px 0 0px;
+        border-radius: 40px;
+        text-align: center;
+        width: 25%;
+        margin: 0 auto;
+    }
+    
+    .service_ld_3_0_0_regist a {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    
+    .service_ld_3_0_0_regist i {
+        font-style: normal;
+    }
+    
+    @media (max-width: 1440px) {
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic {
+            width: 45%;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic img {
+            width: 100%;
+        }
+        .service_ld_3_0_0_box__item .sub {
+            padding: 10px 30px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .service_ld_3_0_0 {
+            padding-bottom: 20px;
+            min-height: 680px;
+        }
+        .service_ld_3_0_0_title {
+            font-size: 30px;
+        }
+        .service_ld_3_0_0_title p {
+            font-size: 20px;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic {
+            width: 45%;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic img {
+            width: 100%;
+        }
+        .service_ld_3_0_0_box__item .sub {
+            font-size: 14px;
+        }
+        .service_ld_3_0_0_box__item .sub p {
+            font-size: 20px;
+        }
+        .service_ld_3_0_0_regist {
+            font-size: 13px;
+        }
+        .service_ld_3_0_0_regist a {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 812px) {
+        .service_ld_3_0_0 {
+            min-height: 600px;
+        }
+        .service_ld_3_0_0_box__item .sub {
+            padding: 10px;
+        }
+        .service_ld_3_0_0_box__item .sub p {
+            font-size: 18px;
+        }
+        .service_ld_3_0_0_regist {
+            width: 33%;
+        }
+    }
+    
+    @media (max-width: 414px) {
+        .service_ld_3_0_0 {
+            background: url(images/service_ld_3_0_0-bg-m.jpg) center 0 no-repeat;
+            padding: 10px 0;
+        }
+        .service_ld_3_0_0_title {
+            font-size: 23px;
+        }
+        .service_ld_3_0_0_title p {
+            font-size: 16px;
+        }
+        .service_ld_3_0_0_box {
+            display: block;
+            padding: 10px 0 0;
+        }
+        .service_ld_3_0_0_box_left {
+            width: 100%;
+        }
+        .service_ld_3_0_0_box_right {
+            width: 100%;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item:nth-child(1) {
+            margin-bottom: 10px;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .pic {
+            width: 100%;
+        }
+        .service_ld_3_0_0_box_right .service_ld_3_0_0_box__item .sub {
+            width: 100%;
+            order: 2;
+        }
+        .service_ld_3_0_0_box__item {
+            background: none;
+            margin-bottom: 10px;
+        }
+        .service_ld_3_0_0_box__item .sub p {
+            margin-bottom: 0px;
+        }
+        .service_ld_3_0_0_regist {
+            width: 55%;
+        }
+        .service_ld_3_0_0_regist a {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .service_ld_3_0_0_title {
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .service_ld_3_0_0_title p {
+            font-size: 13px;
+        }
+        .service_ld_3_0_0_box {
+            padding: 0;
+        }
+        .service_ld_3_0_0_box__item .sub {
+            font-size: 13px;
+        }
+        .service_ld_3_0_0_box__item .sub p {
+            font-size: 15px;
+        }
+        .service_ld_3_0_0_regist {
+            width: 63%;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .service_ld_3_0_0_regist a {
+            font-size: 14px;
+        }
+        .service_ld_3_0_0_regist i {
+            font-size: 11px;
+        }
+    }
+    /*# sourceMappingURL=service_ld_3_0_0.css.map */
+</style>
+
+<body>
+    <section id="" class="service_ld_3_0_0">
+        <div class="container">
+            <div class="service_ld_3_0_0_title">
+                Công nghệ trồng răng implant 4s
+                <p>Giải pháp hoàn hảo cho tình trạng mất răng</p>
+            </div>
+            <div class="service_ld_3_0_0_box">
+                <div class="service_ld_3_0_0_box_left">
+                    <div class="service_ld_3_0_0_box__item">
+                        <div class="pic">
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/service_ld_3_0_0-pic1.png">
+                                <img src="images/service_ld_3_0_0-pic1-m.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="sub">
+                            <p>Thực hiện nhanh chóng chỉ trong vòng 15 phút</p>
+                            <span>Áp dụng máy chụp CT Cone Beam, máng hướng dẫn đặt Implant giúp định vị chính xác</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service_ld_3_0_0_box_right">
+                    <div class="service_ld_3_0_0_box__item">
+                        <div class="sub">
+                            <p>Hạn chế xâm lấn, không cần rạch nướu</p>
+                            <span>An toàn, không xâm lấn, rạch nướu bởi có sự hỗ trợ của máy cáy ghép Implant Surgic XT Plus</span>
+                        </div>
+                        <div class="pic">
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/service_ld_3_0_0-pic2.png">
+                                <img src="images/service_ld_3_0_0-pic2-m.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="service_ld_3_0_0_box__item">
+                        <div class="sub">
+                            <p>Rút ngắn thời gian lành thương</p>
+                            <span>- Quá trình cấy ghép được bổ sung huyết tương PRP</span><br>
+                            <span>- Trụ làm bằng Titan cao cấp an toàn với cơ thể, lành thương</span>
+                        </div>
+                        <div class="pic">
+                            <picture>
+                                <source media="(min-width:600px)" srcset="images/service_ld_3_0_0-pic3.png">
+                                <img src="images/service_ld_3_0_0-pic3-m.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service_ld_3_0_0_regist">
+                <i>Công nghệ này có phù hợp với bạn?</i>
+                <a href="">>> Đăng ký tư vấn >></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+</html>

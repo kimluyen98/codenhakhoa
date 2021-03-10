@@ -1,0 +1,198 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.intro_ld_3_4_3 {
+    @extend %font1;
+    margin-top: 80px;
+    &_bg {
+        position: relative;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &_box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 150px;
+    }
+    &_sub {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        text-align: center;
+        margin: 20px 0;
+        p {
+            margin-bottom: 0;
+            &:nth-child(1),
+            &:nth-child(2) {
+                position: relative;
+                &::after {
+                    border-right: 1px solid #fff;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: -25px;
+                    width: 1px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+    &_regist {
+        color: #fff;
+        background-color: #ff5159;
+        width: 250px;
+        text-align: center;
+        transition: 0.4s;
+        padding: 7px 0;
+        &:hover {
+            box-shadow: 0 0 1px 3px rgba(#ff0f00, 0.8), 0 0 1px 10px rgba(#ff0f00, 0.1), 0 0 1px 20px rgba(#ff0f00, 0.1);
+            border-radius: 40px;
+            transition: 0.4s;
+        }
+        i {
+            font-style: normal;
+            font-size: 16px;
+            text-transform: none;
+        }
+        a {
+            display: block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 24px;
+            line-height: 1;
+        }
+    }
+}
+
+@media #{$r1440} {
+    .intro_ld_3_4_3 {
+        &_box {
+            bottom: 50px;
+        }
+    }
+}
+
+@media #{$r1024} {
+    .intro_ld_3_4_3 {
+        &_title {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+        &_box {
+            bottom: 30px;
+            left: 50px;
+        }
+        &_sub {
+            font-size: 18px;
+            width: 35%;
+            margin: 10px 0;
+            p {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    &::after {
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .intro_ld_3_4_3 {
+        &_box {
+            bottom: 20px;
+        }
+        &_sub {
+            font-size: 14px;
+            width: 40%;
+        }
+        &_regist {
+            width: 220px;
+            a {
+                font-size: 18px;
+            }
+            i {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media #{$r414} {
+    .intro_ld_3_4_3 {
+        &_title {
+            width: 100%;
+        }
+        &_box {
+            left: 0;
+            width: 90%;
+            margin: 0 auto;
+            bottom: 10px;
+        }
+        &_sub {
+            font-size: 16px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        &_regist {
+            margin: 10px auto 0;
+            border-radius: 15px;
+        }
+    }
+}
+
+@media #{$r375} {
+    .intro_ld_3_4_3 {
+        &_title {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media #{$r320} {
+    .intro_ld_3_4_3 {
+        &_sub {
+            font-size: 13px;
+            p {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    &::after {
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        &_regist {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}

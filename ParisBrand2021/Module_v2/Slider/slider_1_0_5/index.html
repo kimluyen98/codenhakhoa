@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SCI FRAMEWORK</title>
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider_1_0_5.css" />
+    <script src="../../media/dist/lib.min.js"></script>
+    <script src="../../media/dist/tiny.slider.min.js"></script>
+
+</head>
+<body>
+    <div class="slider_1_0_5">
+        <div class="slider_1_0_5_slide">
+            <div class="slider_1_0_5__item">
+                <a href="#">
+                    <picture>
+                        <source media="(min-width:600px)" srcset="images/bg.jpg">
+                        <img src="images/bg-m.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="slider_1_0_5__item">
+                <a href="#">
+                    <picture>
+                        <source media="(min-width:600px)" srcset="images/bg.jpg">
+                        <img src="images/bg-m.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="slider_1_0_5__item">
+                <a href="#">
+                    <picture>
+                        <source media="(min-width:600px)" srcset="images/bg.jpg">
+                        <img src="images/bg-m.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var slider_1_0_5_slide = tns({
+        container: '.slider_1_0_5_slide',
+        items: 2,
+        slideBy: 'page',
+        autoplay: false,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        lazyload: true,
+        gutter: 10,
+        lazyloadSelector: '.tns-lazy',
+        autoHeight: true,
+        navPosition: 'bottom',
+        controlsPosition: 'bottom',
+        gutter: 10,
+        slideBy: 1,
+        loop:false,
+        controls: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 1,
+            }
+        },
+        });	
+    </script>
+
+</body>
+
+
+</html>

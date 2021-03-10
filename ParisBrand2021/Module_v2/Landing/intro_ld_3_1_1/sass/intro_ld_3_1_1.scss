@@ -1,0 +1,225 @@
+$r1440: "(max-width:1440px)";
+$r1366: "(max-width:1366px)";
+$r1280: "(max-width:1280px)";
+$r1024: "(max-width:1024px)";
+$r768: "(max-width:812px)";
+$r414: "(max-width:414px)";
+$r375: "(max-width:375px)";
+$r360: "(max-width:360px)";
+$r320: "(max-width:320px)";
+$main:#00619b;
+$color1:#004689;
+a {
+    text-decoration: none;
+}
+
+%font1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.intro_ld_3_1_1 {
+    @extend %font1;
+    margin-top: 80px;
+    .mb {
+        display: none;
+    }
+    &_bg {
+        position: relative;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &_box {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        left: 0;
+        color: #000;
+        .row {
+            margin: 0;
+            align-items: center;
+            .col-md-6 {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+        ul {
+            padding-left: 0px;
+            margin: 15px 0;
+            list-style: none;
+            li {
+                font-size: 24px;
+            }
+        }
+    }
+    &_regist {
+        a {
+            background: #ff5159;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media #{$r1440} {
+    .intro_ld_3_1_1 {
+        &_title {
+            width: 80%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        &_mau {
+            width: 80%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+        &_box {
+            bottom: 40px;
+            ul {
+                width: 80%;
+                margin: 15px auto;
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+        &_regist {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media #{$r1280} {
+    .intro_ld_3_1_1 {
+        &_box {
+            bottom: 20px;
+        }
+    }
+}
+
+@media #{$r1024} {
+    .intro_ld_3_1_1 {
+        &_box {
+            bottom: 20px;
+            ul {
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$r768} {
+    .intro_ld_3_1_1 {
+        &_title {
+            width: 65%;
+            img {
+                width: 100%;
+            }
+        }
+        &_box {
+            bottom: 17px;
+            ul {
+                width: 65%;
+                margin-top: 10px;
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+        &_regist {
+            width: 65%;
+            a {
+                padding: 10px 20px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media #{$r414} {
+    .intro_ld_3_1_1 {
+        .pc {
+            display: none;
+        }
+        .mb {
+            display: block;
+        }
+        &_title {
+            width: 90%;
+            img {
+                width: 100%;
+            }
+        }
+        &_mau {
+            width: 90%;
+        }
+        &_box {
+            bottom: 20px;
+            ul {
+                display: flex;
+                width: 100%;
+                margin: 10px auto;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                li {
+                    width: 50%;
+                }
+            }
+        }
+        &_regist {
+            text-align: center;
+            width: 100%;
+            margin-top: -30px;
+            a {
+                font-size: 20px;
+                padding: 13px 90px;
+            }
+        }
+    }
+}
+
+@media #{$r375} {
+    .intro_ld_3_1_1 {
+        &_box {
+            ul {
+                li {
+                    font-size: 15px;
+                }
+            }
+        }
+        &_regist {
+            a {
+                padding: 13px 70px;
+            }
+        }
+    }
+}
+
+@media #{$r320} {
+    .intro_ld_3_1_1 {
+        &_box {
+            ul {
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+        &_regist {
+            a {
+                padding: 9px 46px;
+            }
+        }
+    }
+}

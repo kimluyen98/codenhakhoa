@@ -1,0 +1,43 @@
+.post_new_other_4_1_0 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.post_new_other_4_1_0 {
+  margin: 10px 0;
+  border: 2px solid #e1908f;
+  border-radius: 5px;
+}
+.post_new_other_4_1_0 .post_other_tt {
+  text-transform: uppercase;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  background-color: #e1908f;
+  color: #fff;
+}
+.post_new_other_4_1_0 .post_other_tt svg {
+  width: 35px;
+  height: 35px;
+  background-color: #df6666;
+  fill: #ffff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.post_new_other_4_1_0 a {
+  color: #3e3efe;
+}
+.post_new_other_4_1_0 a:hover {
+  color: #0056a4;
+}
+
+@media (max-width: 414px) {
+  .post_new_other_4_1_0 {
+    font-size: 14px;
+  }
+  .post_new_other_4_1_0 .post_other_tt {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=post_new_other_4_1_0.css.map */
